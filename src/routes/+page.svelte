@@ -9,7 +9,7 @@
         <div class="grid max-[768px]:grid-cols-1 grid-cols-2 items-center">
             <div class="px-10">
                 <h1 class="text-5xl mb-4">Welcome bij JojoBee!</h1>
-                <p>Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en bouwen van websiteprojecten volgens de beunhaas-methode.</p>
+                <p>Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en bouwen van websiteprojecten volgens de beunhaas-methode. Test</p>
                 <div class="grid grid-cols-2 item-center gap-4">
                     <div>
                         <button class="mt-4 rounded-lg bg-[#00A9FF] px-8 py-5 font-normal text-white w-full">
