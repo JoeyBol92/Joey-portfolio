@@ -33,7 +33,7 @@
 				</div>
 				<div>
 					<enhanced:img
-						src="/static/img/Emilio-contact.jpg"
+						src="/static/Emilio-contact.jpg"
 						alt="Contact opnemen"
 						class="h-auto w-[150px] rounded-[100%] object-cover"
 					/>
