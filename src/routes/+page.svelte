@@ -58,7 +58,7 @@
 			</div>
 			<div class="mx-auto">
 				<enhanced:img
-					src="/static/img/Joey-and-Emilio.jpg"
+					src="./img/Joey-and-Emilio.jpg"
 					class="h-[400px] w-full rounded-xl object-cover md:h-[650px]"
 					alt="Joey en zijn hond"
 				/>
@@ -178,7 +178,7 @@
 			</div>
 			<div class="col-span-1">
 				<enhanced:img
-					src="/static/img/Joey-learn-to-know.jpg"
+					src="./img/Joey-learn-to-know.jpg"
 					alt="Joey standing"
 					class="h-auto w-full rounded-[100%] object-cover"
 				/>
