@@ -17,8 +17,8 @@
 				</a>
 				<ul class="space-y-1 px-4">
 					<li>Joey Bol</li>
-					<li>Prins Clausweg 95</li>
-					<li>2316EX Leiden</li>
+					<li>Ergens 1</li>
+					<li>1234AB Ergens</li>
 
 					<li>&copy; {new Date().getFullYear()}</li>
 				</ul>
@@ -27,8 +27,8 @@
 				<div>
 					<h3 class="pb-2">Contact</h3>
 					<ul class="space-y-1">
-						<li>jlwbol92@gmail.com</li>
-						<li>06 217 10 298</li>
+						<li>mail@mail</li>
+						<li>06 123 45 678</li>
 					</ul>
 				</div>
 				<div>
