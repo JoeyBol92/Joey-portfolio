@@ -32,12 +32,12 @@
 	<Container>
 		<div class="grid grid-cols-2 items-center max-[768px]:grid-cols-1">
 			<div class="px-[25px]">
-				<h1 class="mb-4 text-5xl">Welcome bij JojoBee!</h1>
+				<h1 class="mb-4 text-3xl md:text-5xl">Welcome bij JojoBee!</h1>
 				<p>
 					Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
 					bouwen van websiteprojecten volgens de beunhaas-methode.
 				</p>
-				<div class="item-center grid grid-cols-2 gap-4 pb-8">
+				<div class="item-center grid pb-8 md:grid-cols-2 md:gap-4">
 					<div>
 						<button
 							class="mt-4 w-full rounded-lg bg-[#00A9FF] px-8 py-5 font-normal text-white transition hover:-translate-y-1 hover:opacity-70"
@@ -71,13 +71,13 @@
 <section class="py-10">
 	<Container>
 		<div>
-			<h2 class="mb-4 text-center text-4xl">Waar ik jou mee kan helpen</h2>
+			<h2 class="mb-4 text-center text-2xl md:text-4xl">Waar ik jou mee kan helpen</h2>
 		</div>
 		<div class="grid grid-cols-3 gap-6 py-10 max-[991px]:grid-cols-2 max-[768px]:grid-cols-1">
 			<!-- Service 1 -->
 			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10">
 				<div class="mb-4 flex items-center">
-					<h2 class="mr-2 text-2xl">Budget site</h2>
+					<h2 class="mr-2 text-xl md:text-2xl">Budget site</h2>
 					<img
 						src="./img/wordpress-logo.svg"
 						alt="logo-wordpress"
@@ -104,7 +104,7 @@
 			<!-- Service 2 -->
 			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10">
 				<div class="mb-4 flex items-center">
-					<h2 class="mr-2 text-2xl">Static website</h2>
+					<h2 class="mr-2 text-xl md:text-2xl">Static website</h2>
 					<img
 						src="./img/svelte-logo.svg"
 						alt="logo-svelte"
@@ -131,7 +131,7 @@
 			<!-- Service 3 -->
 			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10">
 				<div class="mb-4 flex items-center">
-					<h2 class="mr-2 text-2xl">Headless CMS</h2>
+					<h2 class="mr-2 text-xl md:text-2xl">Headless CMS</h2>
 					<img
 						src="./img/wordpress-logo.svg"
 						alt="logo-wordpress"
@@ -170,8 +170,8 @@
 	<Container>
 		<div class="grid grid-cols-1 items-center gap-x-8 md:grid-cols-3">
 			<div class="col-span-2">
-				<h2 class="mb-4 text-4xl">Maak kennis met Joey</h2>
-				<p class="py-6">
+				<h2 class="text-2xl md:mb-4 md:text-4xl">Maak kennis met Joey</h2>
+				<p class=" py-4 md:py-6">
 					Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
 					bouwen van websiteprojecten volgens de beunhaas-methode.
 				</p>
