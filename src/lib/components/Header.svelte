@@ -12,7 +12,7 @@
 					<img
 						src="./img/logo-jojobee.svg"
 						alt=""
-						class="w-auto px-4 pb-4 pt-6 max-[768px]:w-[50%]"
+						class="w-auto px-4 pb-4 pt-6 max-[768px]:mt-[-7px] max-[768px]:w-[120px]"
 						width="180"
 						height="76"
 					/>
