@@ -8,7 +8,7 @@
 	<meta name="robots" content="index" />
 	<meta property="og:title" content="JojoBee: websites op maat &copy; {new Date().getFullYear()}" />
 	<meta property="og:url" content="https://jojobee.nl" />
-	<meta property="og:image" content="./img/logo-jojobee.svg" />
+	<meta property="og:image" content="https://jojobee.nl/img/logo-jojobee.svg" />
 	<meta property="og:image:alt" content="Logo JojoBee" />
 	<meta property="og:type" content="WebPage" />
 	<meta property="og:description" content="Ik maak website op maat voor jou en supersnel" />
@@ -21,7 +21,7 @@
 	/>
 	<meta name="twitter:url" content="https://jojobee.nl" />
 	<meta name="twitter:description" content="Ik maak website op maat voor jou en supersnel" />
-	<meta name="twitter:image" content="./img/logo-jojobee.svg" />
+	<meta name="twitter:image" content="https://jojobee.nl/img/logo-jojobee.svg" />
 	<meta name="twitter:image:alt" content="Logo JojoBee" />
 
 	<!-- {@html `<script type="application/ld+json">${JSON.stringify(schema)}</script>`} -->
