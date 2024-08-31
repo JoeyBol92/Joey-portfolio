@@ -59,7 +59,7 @@
 			<div class="mx-auto">
 				<enhanced:img
 					src="/static/Joey-and-Emilio.jpg"
-					class="h-[400px] w-full rounded-xl object-cover md:h-[650px]"
+					class="s h-[400px] w-full rounded-xl object-cover shadow-2xl md:h-[650px]"
 					alt="Joey en zijn hond"
 				/>
 			</div>
@@ -75,7 +75,7 @@
 		</div>
 		<div class="grid grid-cols-3 gap-6 py-10 max-[991px]:grid-cols-2 max-[768px]:grid-cols-1">
 			<!-- Service 1 -->
-			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10">
+			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10 shadow-md">
 				<div class="mb-4 flex items-center">
 					<h2 class="mr-2 text-xl md:text-2xl">Budget site</h2>
 					<img
@@ -102,7 +102,7 @@
 			</div>
 
 			<!-- Service 2 -->
-			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10">
+			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10 shadow-md">
 				<div class="mb-4 flex items-center">
 					<h2 class="mr-2 text-xl md:text-2xl">Static website</h2>
 					<img
@@ -129,7 +129,7 @@
 			</div>
 
 			<!-- Service 3 -->
-			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10">
+			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10 shadow-md">
 				<div class="mb-4 flex items-center">
 					<h2 class="mr-2 text-xl md:text-2xl">Headless CMS</h2>
 					<img
@@ -180,7 +180,7 @@
 				<enhanced:img
 					src="/static/Joey-learn-to-know.jpg"
 					alt="Joey standing"
-					class="h-auto w-full rounded-[100%] object-cover"
+					class="h-auto w-full rounded-[100%] object-cover shadow-2xl"
 				/>
 			</div>
 		</div>

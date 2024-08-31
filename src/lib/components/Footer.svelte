@@ -35,7 +35,7 @@
 					<enhanced:img
 						src="/static/Emilio-contact.jpg"
 						alt="Contact opnemen"
-						class="h-auto w-[150px] rounded-[100%] object-cover max-[768px]:pt-4"
+						class="h-auto w-[150px] rounded-[100%] object-cover shadow-2xl max-[768px]:pt-4"
 					/>
 				</div>
 			</div>
