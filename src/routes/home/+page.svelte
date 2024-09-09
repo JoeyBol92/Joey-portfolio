@@ -79,92 +79,177 @@
 		<div>
 			<h2 class="mb-4 text-center text-2xl md:text-4xl">Waar ik jou mee kan helpen</h2>
 		</div>
-		<div class="grid grid-cols-3 gap-6 py-10 max-[991px]:grid-cols-2 max-[768px]:grid-cols-1">
-			<!-- Service 1 -->
-			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10 shadow-md">
-				<div class="mb-4 flex items-center">
-					<h2 class="mr-2 text-xl md:text-2xl">Budget site</h2>
-					<img
-						src="./img/wordpress-logo.svg"
-						alt="logo-wordpress"
-						class="w-[50px]"
-						width="50"
-						height="50"
-					/>
-				</div>
-				<div class="mb-4">
-					<p class="py-6">
+		<div class="grid gap-8 py-10 md:grid-cols-3">
+			<div
+				class="bg-card text-card-foreground h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm"
+			>
+				<div class="flex flex-col items-center p-6">
+					<div class="mb-4 flex items-center">
+						<h3 class="mr-2 text-xl font-semibold">Budget site</h3>
+						<img
+							src="./img/wordpress-logo.svg"
+							alt="logo-wordpress"
+							class="w-[50px]"
+							width="50"
+							height="50"
+						/>
+					</div>
+					<p class="mb-4 text-gray-600">
 						Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
 						bouwen van websiteprojecten volgens de beunhaas-methode.
 					</p>
-
 					<button
-						class="w-full rounded-lg bg-[#00A9FF] px-8 py-5 font-normal text-white transition hover:-translate-y-1 hover:opacity-70"
-						aria-label="My work"
+						class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+						data-id="44">View Project</button
 					>
-						My work
-					</button>
 				</div>
 			</div>
+			<div
+				class="bg-card text-card-foreground h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm"
+			>
+				<div class="flex flex-col items-center p-6">
+					<div class="mb-4 flex items-center">
+						<h3 class="mr-2 text-xl font-semibold">Static website</h3>
+						<img
+							src="./img/svelte-logo.svg"
+							alt="logo-svelte"
+							class="w-[50px]"
+							width="50"
+							height="50"
+						/>
+					</div>
 
-			<!-- Service 2 -->
-			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10 shadow-md">
-				<div class="mb-4 flex items-center">
-					<h2 class="mr-2 text-xl md:text-2xl">Static website</h2>
-					<img
-						src="./img/svelte-logo.svg"
-						alt="logo-svelte"
-						class="w-[50px]"
-						width="50"
-						height="50"
-					/>
-				</div>
-				<div class="mb-4">
-					<p class="py-6">
+					<p class="mb-4 text-gray-600">
 						Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
 						bouwen van websiteprojecten volgens de beunhaas-methode.
 					</p>
-
 					<button
-						class="w-full rounded-lg bg-[#00A9FF] px-8 py-5 font-normal text-white transition hover:-translate-y-1 hover:opacity-70"
-						aria-label="My work"
+						class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+						data-id="44">View Project</button
 					>
-						My work
-					</button>
 				</div>
 			</div>
-
-			<!-- Service 3 -->
-			<div class="flex flex-col items-center rounded-3xl bg-[#EFEFEF] p-10 shadow-md">
-				<div class="mb-4 flex items-center">
-					<h2 class="mr-2 text-xl md:text-2xl">Headless CMS</h2>
-					<img
-						src="./img/wordpress-logo.svg"
-						alt="logo-wordpress"
-						class="w-[50px]"
-						width="50"
-						height="50"
-					/>
-					<img
-						src="./img/svelte-logo.svg"
-						alt="logo-svelte"
-						class="ml-2 w-[50px]"
-						width="50"
-						height="50"
-					/>
-				</div>
-				<div class="mb-4">
-					<p class="py-6">
+			<div
+				class="bg-card text-card-foreground h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm"
+			>
+				<div class="flex flex-col items-center p-6">
+					<div class="mb-4 flex items-center">
+						<h3 class="mr-2 text-xl font-semibold">Headless CMS</h3>
+						<img
+							src="./img/wordpress-logo.svg"
+							alt="logo-wordpress"
+							class="w-[50px]"
+							width="50"
+							height="50"
+						/>
+						<img
+							src="./img/svelte-logo.svg"
+							alt="logo-svelte"
+							class="ml-2 w-[50px]"
+							width="50"
+							height="50"
+						/>
+					</div>
+					<p class="mb-4 text-gray-600">
 						Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
 						bouwen van websiteprojecten volgens de beunhaas-methode.
 					</p>
-
 					<button
-						class="w-full translate-y-1 rounded-lg bg-[#00A9FF] px-8 py-5 font-normal text-white transition hover:-translate-y-1 hover:opacity-70"
-						aria-label="My work"
+						class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+						data-id="44">View Project</button
 					>
-						My work
-					</button>
+				</div>
+			</div>
+		</div>
+	</Container>
+</section>
+
+<!-- Portfolio -->
+<section class="bg-gray-50 px-[25px] py-20">
+	<Container>
+		<div>
+			<h2 class="mb-4 text-center text-2xl md:text-4xl">Mijn bijdragen</h2>
+		</div>
+		<div class="grid gap-8 py-10 md:grid-cols-3">
+			<div
+				class="text-card-foreground h-full rounded-lg border bg-white shadow-sm"
+				data-id="53"
+				data-v0-t="card"
+			>
+				<div class="flex flex-col items-center p-6 text-center" data-id="54">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-code h-8 w-8 text-[#00A9FF]"
+						data-id="45"
+						><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"
+						></polyline></svg
+					>
+					<h3 class="mb-2 mt-4 text-xl font-semibold" data-id="55">Custom Web Development</h3>
+					<p class="text-gray-600" data-id="56">
+						Tailored solutions to meet your unique business needs.
+					</p>
+				</div>
+			</div>
+			<div
+				class="text-card-foreground h-full rounded-lg border bg-white shadow-sm"
+				data-id="53"
+				data-v0-t="card"
+			>
+				<div class="flex flex-col items-center p-6 text-center" data-id="54">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-code h-8 w-8 text-[#00A9FF]"
+						data-id="45"
+						><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"
+						></polyline></svg
+					>
+					<h3 class="mb-2 mt-4 text-xl font-semibold" data-id="55">Custom Web Development</h3>
+					<p class="text-gray-600" data-id="56">
+						Tailored solutions to meet your unique business needs.
+					</p>
+				</div>
+			</div>
+			<div
+				class="text-card-foreground h-full rounded-lg border bg-white shadow-sm"
+				data-id="53"
+				data-v0-t="card"
+			>
+				<div class="flex flex-col items-center p-6 text-center" data-id="54">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-code h-8 w-8 text-[#00A9FF]"
+						data-id="45"
+						><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"
+						></polyline></svg
+					>
+					<h3 class="mb-2 mt-4 text-xl font-semibold" data-id="55">Custom Web Development</h3>
+					<p class="text-gray-600" data-id="56">
+						Tailored solutions to meet your unique business needs.
+					</p>
 				</div>
 			</div>
 		</div>
