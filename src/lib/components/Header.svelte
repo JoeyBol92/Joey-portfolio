@@ -10,7 +10,7 @@
 			<div class="absolute left-0 top-0 w-[180px] bg-white">
 				<a href="/" aria-label="Link to homepage">
 					<img
-						src="./img/logo-jojobee.svg"
+						src="/img/logo-jojobee.svg/"
 						alt=""
 						class="w-auto px-4 pb-4 pt-6 max-[768px]:mt-[-7px] max-[768px]:w-[120px]"
 						width="180"

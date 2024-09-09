@@ -56,7 +56,7 @@
 								stroke-linecap="round"
 								stroke-linejoin="round"
 								class="lucide lucide-chevron-right ml-2 h-5 w-5"
-								data-id="66"><path d="m9 18 6-6-6-6"></path></svg
+								><path d="m9 18 6-6-6-6"></path></svg
 							>
 						</button>
 					</div>
@@ -87,7 +87,7 @@
 					<div class="mb-4 flex items-center">
 						<h3 class="mr-2 text-xl font-semibold">Budget site</h3>
 						<img
-							src="./img/wordpress-logo.svg"
+							src="/img/wordpress-logo.svg"
 							alt="logo-wordpress"
 							class="w-[50px]"
 							width="50"
@@ -100,7 +100,7 @@
 					</p>
 					<button
 						class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-						data-id="44">View Project</button
+						>View Project</button
 					>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 					<div class="mb-4 flex items-center">
 						<h3 class="mr-2 text-xl font-semibold">Static website</h3>
 						<img
-							src="./img/svelte-logo.svg"
+							src="/img/svelte-logo.svg"
 							alt="logo-svelte"
 							class="w-[50px]"
 							width="50"
@@ -125,7 +125,7 @@
 					</p>
 					<button
 						class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-						data-id="44">View Project</button
+						>View Project</button
 					>
 				</div>
 			</div>
@@ -136,14 +136,14 @@
 					<div class="mb-4 flex items-center">
 						<h3 class="mr-2 text-xl font-semibold">Headless CMS</h3>
 						<img
-							src="./img/wordpress-logo.svg"
+							src="/img/wordpress-logo.svg"
 							alt="logo-wordpress"
 							class="w-[50px]"
 							width="50"
 							height="50"
 						/>
 						<img
-							src="./img/svelte-logo.svg"
+							src="/img/svelte-logo.svg"
 							alt="logo-svelte"
 							class="ml-2 w-[50px]"
 							width="50"
@@ -156,7 +156,7 @@
 					</p>
 					<button
 						class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-						data-id="44">View Project</button
+						>View Project</button
 					>
 				</div>
 			</div>
@@ -171,12 +171,67 @@
 			<h2 class="mb-4 text-center text-2xl md:text-4xl">Mijn bijdragen</h2>
 		</div>
 		<div class="grid gap-8 py-10 md:grid-cols-3">
-			<div
-				class="text-card-foreground h-full rounded-lg border bg-white shadow-sm"
-				data-id="53"
-				data-v0-t="card"
-			>
-				<div class="flex flex-col items-center p-6 text-center" data-id="54">
+			<a href="/" class="pointer transition hover:-translate-y-1">
+				<div class="h-full rounded-lg border bg-white shadow-sm">
+					<div class="flex flex-col items-center p-6 text-center">
+						<!-- <svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-code h-8 w-8 text-[#00A9FF]"
+							><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"
+							></polyline></svg
+						> -->
+						<enhanced:img
+							src="/static/img/portfolio/logo.png"
+							alt="logo-svelte"
+							class="ml-2 h-[50px] w-auto"
+						/>
+						<h3 class="mb-2 mt-4 text-xl font-semibold">DitjesenDatjes</h3>
+						<p class="text-gray-600">Tailored solutions to meet your unique business needs.</p>
+					</div>
+				</div>
+			</a>
+			<a href="/" class="pointer transition hover:-translate-y-1">
+				<div class="h-full rounded-lg border bg-white shadow-sm">
+					<div class="flex flex-col items-center p-6 text-center">
+						<enhanced:img
+							src="/static/img/portfolio/Bukett_Woordmerk_RGB_Zwart_144dpi.png"
+							alt="logo-svelte"
+							class="ml-2 h-[50px] w-auto"
+						/>
+						<h3 class="mb-2 mt-4 text-xl font-semibold">Bukett</h3>
+						<p class="text-gray-600">Tailored solutions to meet your unique business needs.</p>
+					</div>
+				</div>
+			</a>
+			<a href="/" class="pointer transition hover:-translate-y-1">
+				<div class="h-full rounded-lg border bg-white shadow-sm">
+					<div class="flex flex-col items-center p-6 text-center">
+						<enhanced:img
+							src="/static/img/portfolio/logo-ams-advocaten.png"
+							alt="logo-svelte"
+							class="ml-2 h-[50px] w-auto"
+						/>
+						<h3 class="mb-2 mt-4 text-xl font-semibold">AMS Advocaten</h3>
+						<p class="text-gray-600">Tailored solutions to meet your unique business needs.</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="flex justify-center">
+			<a href="/portfolio/" aria-label="button link naar portfolio">
+				<button
+					class="mt-4 flex items-center justify-between rounded-lg border bg-[#00A9FF] py-3 pl-4 pr-4 font-normal text-white transition hover:-translate-y-1 hover:bg-white hover:text-[#00A9FF]"
+					aria-label="Contact me"
+				>
+					<span>Bekijk alle bijdragen</span>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
@@ -187,71 +242,10 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="lucide lucide-code h-8 w-8 text-[#00A9FF]"
-						data-id="45"
-						><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"
-						></polyline></svg
+						class="lucide lucide-chevron-right ml-2 h-5 w-5"><path d="m9 18 6-6-6-6"></path></svg
 					>
-					<h3 class="mb-2 mt-4 text-xl font-semibold" data-id="55">Custom Web Development</h3>
-					<p class="text-gray-600" data-id="56">
-						Tailored solutions to meet your unique business needs.
-					</p>
-				</div>
-			</div>
-			<div
-				class="text-card-foreground h-full rounded-lg border bg-white shadow-sm"
-				data-id="53"
-				data-v0-t="card"
-			>
-				<div class="flex flex-col items-center p-6 text-center" data-id="54">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="lucide lucide-code h-8 w-8 text-[#00A9FF]"
-						data-id="45"
-						><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"
-						></polyline></svg
-					>
-					<h3 class="mb-2 mt-4 text-xl font-semibold" data-id="55">Custom Web Development</h3>
-					<p class="text-gray-600" data-id="56">
-						Tailored solutions to meet your unique business needs.
-					</p>
-				</div>
-			</div>
-			<div
-				class="text-card-foreground h-full rounded-lg border bg-white shadow-sm"
-				data-id="53"
-				data-v0-t="card"
-			>
-				<div class="flex flex-col items-center p-6 text-center" data-id="54">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="lucide lucide-code h-8 w-8 text-[#00A9FF]"
-						data-id="45"
-						><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"
-						></polyline></svg
-					>
-					<h3 class="mb-2 mt-4 text-xl font-semibold" data-id="55">Custom Web Development</h3>
-					<p class="text-gray-600" data-id="56">
-						Tailored solutions to meet your unique business needs.
-					</p>
-				</div>
-			</div>
+				</button>
+			</a>
 		</div>
 	</Container>
 </section>
@@ -289,8 +283,7 @@
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
-							class="lucide lucide-chevron-right ml-2 h-5 w-5"
-							data-id="66"><path d="m9 18 6-6-6-6"></path></svg
+							class="lucide lucide-chevron-right ml-2 h-5 w-5"><path d="m9 18 6-6-6-6"></path></svg
 						>
 					</button>
 				</div>

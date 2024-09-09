@@ -7,13 +7,7 @@
 		<div class="grid grid-cols-1 justify-end bg-white py-10 md:grid-cols-3">
 			<div class=" left-0 top-0 col-span-2 w-[180px] bg-white">
 				<a href="/">
-					<img
-						src="./img/logo-jojobee.svg"
-						alt="logo"
-						class="w-auto px-4 pb-4"
-						width=""
-						height=""
-					/>
+					<img src="/img/logo-jojobee.svg" alt="logo" class="w-auto px-4 pb-4" width="" height="" />
 				</a>
 				<ul class="space-y-1 px-4">
 					<li>Joey Bol</li>
