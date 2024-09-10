@@ -159,7 +159,7 @@
 		<div class="flex justify-center gap-4 md:flex-row">
 			<a href={data.portfolio.fields.websiteKlant} target="_blank" rel="nofollow">
 				<button
-					class="ring-offset-background focus-visible:ring-ring inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-[#00A9FF] px-4 py-2 text-sm font-medium text-white transition transition hover:-translate-y-1 hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none"
+					class="ring-offset-background focus-visible:ring-ring inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-[#00A9FF] px-4 py-2 text-sm font-medium text-white transition hover:-translate-y-1 hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
@@ -179,7 +179,3 @@
 		</div>
 	</div>
 </div>
-
-<!-- <pre>
-    {JSON.stringify(data.portfolio.fields, null, 2)}
-</pre> -->

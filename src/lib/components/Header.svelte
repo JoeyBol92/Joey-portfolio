@@ -21,12 +21,12 @@
 			<div class="hidden items-center font-bold md:flex">
 				<ul class="ml-auto flex space-x-16 py-4 text-[#000]">
 					<li>
-						<a href="/our-services/" class="hover:text-[#00A9FF] active:text-blue-700"
-							>Our services</a
-						>
+						<a href="/diensten/" class="hover:text-[#00A9FF] active:text-blue-700">Diensten</a>
+					</li>
+					<li>
+						<a href="/portfolio/" class="hover:text-[#00A9FF] active:text-blue-700">Portfolio</a>
 					</li>
 					<li><a href="/contact/" class="hover:text-[#00A9FF] active:text-blue-700">Contact</a></li>
-					<li><a href="/" class="hover:text-[#00A9FF] active:text-blue-700">Calculator</a></li>
 				</ul>
 			</div>
 			<button
@@ -64,10 +64,10 @@
 		</div>
 		<ul class="mx-auto py-4 text-center text-[#000]">
 			<li>
-				<a href="/our-services/" class="hover:text-blue-700 active:text-blue-700">Our services</a>
+				<a href="/diensten/" class="hover:text-blue-700 active:text-blue-700">Diensten</a>
 			</li>
+			<li><a href="/portfolio/" class="hover:text-blue-700 active:text-blue-700">Portfolio</a></li>
 			<li><a href="/contact/" class="hover:text-blue-700 active:text-blue-700">Contact</a></li>
-			<li><a href="/" class="hover:text-blue-700 active:text-blue-700">Calculator</a></li>
 		</ul>
 	</div>
 </header>
