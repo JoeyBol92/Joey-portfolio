@@ -91,7 +91,7 @@
 				</div>
 				<div>
 					<h3 class="font-semibold text-gray-600">Categorie</h3>
-					<p class="text-lg">FashionForward</p>
+					<p class="text-lg">{@html data.portfolio.fields.categorie}</p>
 				</div>
 			</div>
 		</div>
@@ -138,21 +138,21 @@
 	</div>
 </div>
 
-<div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
-	<div class="px-[25px]">
-		<div class="mb-12 grid gap-8 md:grid-cols-2">
-			<img
-				src="https://via.placeholder.com/668?text=JojoBee"
-				alt=""
-				class="h-64 w-full rounded-lg object-cover shadow-md"
-			/><img
-				src="https://via.placeholder.com/668?text=JojoBee"
-				alt=""
-				class="h-64 w-full rounded-lg object-cover shadow-md"
-			/>
+{#if data.portfolio.fields.media}
+	<div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
+		<div class="px-[25px]">
+			<div class="mb-12 grid gap-8 md:grid-cols-2">
+				{#each data.portfolio.fields.media as media}
+					<img
+						src={media.fields.file.url}
+						alt={media.fields.description}
+						class=" h-96 w-full rounded-lg object-cover object-top shadow-md"
+					/>
+				{/each}
+			</div>
 		</div>
 	</div>
-</div>
+{/if}
 
 <div class="container mx-auto mb-12 max-w-7xl px-6 sm:px-8">
 	<div class="px-[25px]">
