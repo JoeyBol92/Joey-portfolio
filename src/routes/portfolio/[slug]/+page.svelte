@@ -124,7 +124,7 @@
 			</div>
 			<div class="bg-card text-card-foreground rounded-lg border shadow-sm">
 				<div class="p-6">
-					<h2 class="mb-4 text-2xl font-bold">Technologies Used</h2>
+					<h2 class="mb-4 text-2xl font-bold">Technieken</h2>
 					<div class="flex flex-wrap gap-2">
 						{#each data.portfolio.fields.technieken as techniek}
 							<span class="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800"
@@ -173,7 +173,7 @@
 						><circle cx="12" cy="12" r="10"></circle><path
 							d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
 						></path><path d="M2 12h20"></path></svg
-					><span class="ml-2">Visit Live Site</span></button
+					><span class="ml-2">Bekijk {@html data.portfolio.fields.websiteKlant}</span></button
 				>
 			</a>
 		</div>
