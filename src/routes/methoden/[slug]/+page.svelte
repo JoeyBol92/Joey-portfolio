@@ -8,7 +8,7 @@
 	<title>{data.methoden.fields.seoTitel} &copy;</title>
 	<meta name="description" content={data.methoden.fields.seoMetabeschrijving} />
 	<link rel="canonical" href="https://jojobee.nl/methoden/{data.methoden.fields.slug}/" />
-	<meta name="robots" content="index" />
+	<meta name="robots" content="noindex" />
 	<meta property="og:title" content="{data.methoden.fields.seoTitel} &copy;" />
 	<meta property="og:url" content="https://jojobee.nl/methoden/{data.methoden.fields.slug}/" />
 	<meta property="og:image" content={data.methoden.fields.imageMethode.fields.file.url} />

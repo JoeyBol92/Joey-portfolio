@@ -5,7 +5,7 @@
 <svelte:head>
 	<link rel="canonical" href="https://jojobee.nl" />
 	<meta name="description" content="Ik maak website op maat voor jou en supersnel" />
-	<meta name="robots" content="index" />
+	<meta name="robots" content="noindex" />
 	<meta property="og:title" content="JojoBee: websites op maat &copy; {new Date().getFullYear()}" />
 	<meta property="og:url" content="https://jojobee.nl" />
 	<meta property="og:image" content="https://jojobee.nl/img/logo-jojobee.svg" />
@@ -242,7 +242,10 @@
 							class="ml-2 h-[50px] w-auto"
 						/>
 						<h3 class="mb-2 mt-4 text-xl font-semibold">DitjesenDatjes</h3>
-						<p class="text-gray-600">Tailored solutions to meet your unique business needs.</p>
+						<p class="text-gray-600">
+							In opdracht van Trusted Media heb ik in dienst van Performance Department samen met
+							mijn collega Hessel Middendorp een nieuwe opzet gerealiseerd.
+						</p>
 					</div>
 				</div>
 			</a>
@@ -255,7 +258,10 @@
 							class="ml-2 h-[50px] w-auto"
 						/>
 						<h3 class="mb-2 mt-4 text-xl font-semibold">Bukett</h3>
-						<p class="text-gray-600">Tailored solutions to meet your unique business needs.</p>
+						<p class="text-gray-600">
+							In opdracht van Doxflow B.V. heb ik in dienst van Performance Department de website
+							https://www.bukett.nl gebouwd.
+						</p>
 					</div>
 				</div>
 			</a>
@@ -268,7 +274,10 @@
 							class="ml-2 h-[50px] w-auto"
 						/>
 						<h3 class="mb-2 mt-4 text-xl font-semibold">AMS Advocaten</h3>
-						<p class="text-gray-600">Tailored solutions to meet your unique business needs.</p>
+						<p class="text-gray-600">
+							In opdracht van AMS Advocaten heb ik in dienst van Performance Department samen met
+							mijn collega Hessel Middendorp een nieuwe opzet gerealiseerd.
+						</p>
 					</div>
 				</div>
 			</a>

@@ -8,7 +8,7 @@
 		name="description"
 		content="Welk soort website past het best bij jou? Een standaard WordPress website? Of wellicht een statische website of zelfs een Headless CMS? Ik leg je de verschillen graag uit."
 	/>
-	<meta name="robots" content="index" />
+	<meta name="robots" content="noindex" />
 	<meta property="og:title" content="Methoden - JojoBee &copy;" />
 	<meta property="og:url" content="https://jojobee.nl/methoden/" />
 	<meta property="og:image" content="https://jojobee.nl/img/logo-jojobee.svg" />

@@ -8,7 +8,7 @@
 	<title>{data.portfolio.fields.seoTitel} &copy;</title>
 	<meta name="description" content={data.portfolio.fields.seoMetabeschrijving} />
 	<link rel="canonical" href="https://jojobee.nl/portfolio/{data.portfolio.fields.slug}/" />
-	<meta name="robots" content="index" />
+	<meta name="robots" content="noindex" />
 	<meta property="og:title" content="{data.portfolio.fields.seoTitel} &copy;" />
 	<meta property="og:url" content="https://jojobee.nl/portfolio/{data.portfolio.fields.slug}/" />
 	<meta
@@ -134,7 +134,7 @@
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
 		<div class="rounded-lg border p-6 shadow-sm">
-			<h2 class="mb-4 text-2xl font-bold">Project Overview</h2>
+			<h2 class="mb-4 text-2xl font-bold">Projectomschrijving</h2>
 			<div class="prose-p:mb-5 prose-p:text-gray-600">
 				{@html documentToHtmlString(data.portfolio.fields.projectBeschrijving)}
 			</div>
