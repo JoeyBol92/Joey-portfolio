@@ -133,7 +133,7 @@
 				</div>
 				<p class="mb-4 text-gray-600">
 					Headless betekent dat de front-end en de back-end van elkaar losgekoppeld zijn. Ideaal
-					voor website met veel bezoek en waar dagelijks veel werk in wordt verricht.
+					voor websites met veel bezoek en waar dagelijks veel werk in wordt verricht.
 				</p>
 				<a href="/methoden/headless/">
 					<button
