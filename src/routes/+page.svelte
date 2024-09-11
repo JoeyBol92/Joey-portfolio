@@ -80,7 +80,7 @@
 <section class="py-10">
 	<Container>
 		<div>
-			<h2 class="mb-4 text-center text-2xl md:text-4xl">Waar ik jou mee kan helpen</h2>
+			<h2 class="mb-4 text-center text-2xl md:text-4xl">Mijn methoden</h2>
 		</div>
 		<div class="grid gap-8 py-10 md:grid-cols-3">
 			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
