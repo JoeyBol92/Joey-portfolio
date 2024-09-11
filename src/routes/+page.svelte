@@ -275,7 +275,7 @@
 			>
 				<div class="flex flex-col items-center p-6">
 					<div class="mb-4 flex items-center">
-						<h3 class="mr-2 text-xl font-semibold">Budget site</h3>
+						<h3 class="mr-2 text-xl font-semibold">WordPress</h3>
 						<img
 							src="/img/wordpress-logo.svg"
 							alt="logo-wordpress"
@@ -285,13 +285,13 @@
 						/>
 					</div>
 					<p class="mb-4 text-gray-600">
-						Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
-						bouwen van websiteprojecten volgens de beunhaas-methode.
+						De manier om snel en budgetvriendelijke een website op te zetten is WordPress. Met
+						weinig budget kan je met succes een mooie website bouwen.
 					</p>
-					<a href="/methoden/budget-site/">
+					<a href="/methoden/wordpress/">
 						<button
 							class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
-							>Meer informatie over een budget site
+							>Meer informatie over een WordPress site
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="24"
