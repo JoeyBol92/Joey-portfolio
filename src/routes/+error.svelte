@@ -6,14 +6,14 @@
 	<div class="flex items-center justify-center px-[25px]">
 		<h1 class="text-3xl md:text-5xl">{$page.status}: {$page.error.message}</h1>
 	</div>
-	<div class="item-center mx-auto grid max-w-[500px] px-[25px] py-8 pb-8 md:grid-cols-2 md:gap-4">
-		<div>
+	<div class="item-center mx-auto max-w-[500px] px-[25px] py-8 pb-8 md:gap-4">
+		<div class="flex justify-center">
 			<a href="/" aria-label="button link to homepage">
 				<button
-					class="mt-4 flex w-full items-center justify-between rounded-lg bg-[#00A9FF] py-3 pl-8 pr-4 font-normal text-white transition hover:-translate-y-1 hover:bg-[#0088CC]"
+					class="x mt-4 flex items-center justify-between rounded-lg bg-[#00A9FF] py-3 pl-8 pr-4 font-normal text-white transition hover:-translate-y-1 hover:bg-[#0088CC]"
 					aria-label="My work"
 				>
-					<span>Back to homepage</span>
+					<span>Terug naar homepage</span>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
@@ -30,7 +30,7 @@
 				</button>
 			</a>
 		</div>
-		<div>
+		<!-- <div>
 			<a href="/contact/" aria-label="button link to contact page">
 				<button
 					class="mt-4 flex w-full items-center justify-between rounded-lg border bg-white py-3 pl-8 pr-4 font-normal text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
@@ -52,6 +52,6 @@
 					>
 				</button>
 			</a>
-		</div>
+		</div> -->
 	</div>
 </section>

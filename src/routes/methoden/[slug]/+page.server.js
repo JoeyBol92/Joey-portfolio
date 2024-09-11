@@ -6,7 +6,6 @@ export async function load({ params }) {
 		'fields.slug': params.slug,
 		content_type: 'methoden'
 	});
-	console.log(params.slug);
 
 	if (!methoden.items.length) {
 		throw error(404, 'Pagina niet gevonden');
