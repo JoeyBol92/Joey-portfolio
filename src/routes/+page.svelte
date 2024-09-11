@@ -324,7 +324,7 @@
 					<p class=" py-4 md:py-6">
 						Wil je meer weten over wat ik doe? Neem dan contact met mij op via onderstaande knop.
 					</p>
-					<a href="/contact/" aria-label="link naar contactpagina">
+					<a href="mailto:jlwbol92@gmail.com" aria-label="link om Joey te mailen">
 						<button
 							class="mt-4 flex items-center justify-between rounded-lg border bg-white py-3 pl-4 pr-4 font-normal text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
 							aria-label="Contact me"
