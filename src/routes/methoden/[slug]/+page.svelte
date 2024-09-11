@@ -30,15 +30,15 @@
 		<img
 			src={data.methoden.fields.imageMethode.fields.file.url}
 			alt={data.methoden.fields.imageMethode.fields.description}
-			class="w-[50px]"
+			class="h-[50px] w-auto"
 			width="50"
 			height="50"
 		/>
 		<h1 class="ml-4 text-3xl md:text-5xl">{@html data.methoden.fields.titelMethode}</h1>
 	</div>
-	<p class="mx-auto mb-12 max-w-3xl px-[25px] text-gray-600">
+	<div class="mx-auto mb-12 max-w-3xl px-[25px] text-gray-600 prose-p:mb-5 prose-p:text-gray-600">
 		{@html documentToHtmlString(data.methoden.fields.beschrijving)}
-	</p>
+	</div>
 </section>
 
 <!-- Eigenschappen -->

@@ -23,7 +23,9 @@
 						height={portfolio.fields.logo.fields.file.details.image.height}
 					/>
 					<div class="flex flex-grow flex-col px-6 pb-6">
-						<h2 class="mb-2 text-xl font-semibold">{@html portfolio.fields.title_portfolio}</h2>
+						<h2 class="mb-2 text-center text-xl font-semibold">
+							{@html portfolio.fields.title_portfolio}
+						</h2>
 						<p class="mb-4 flex-grow text-gray-600">
 							{@html documentToHtmlString(portfolio.fields.projectBeschrijving).slice(0, 150)}
 						</p>

@@ -223,8 +223,10 @@
 			<div class="px-[25px]">
 				<h1 class="mb-4 text-3xl md:text-5xl">Welcome bij JojoBee!</h1>
 				<p>
-					Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
-					bouwen van websiteprojecten volgens de beunhaas-methode.
+					Hoi ik ben Joey, een rasechte, positief ingestelde en enthousiaste Leidenaar met een
+					passie voor online webdevelopment. Sta altijd klaar voor mijn collega's (behalve op 3
+					oktober). Leergierig en loopt niet weg voor een uitdaging. Is zelf pas tevreden als andere
+					mensen dat ook zijn.
 				</p>
 				<div class="item-center pb-8">
 					<div>
@@ -500,8 +502,7 @@
 				<div class="col-span-2">
 					<h2 class="text-2xl md:mb-4 md:text-4xl">Maak kennis met Joey</h2>
 					<p class=" py-4 md:py-6">
-						Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
-						bouwen van websiteprojecten volgens de beunhaas-methode.
+						Wil je meer weten over wat ik doe? Neem dan contact met mij op via onderstaande knop.
 					</p>
 					<a href="/contact/" aria-label="link naar contactpagina">
 						<button
