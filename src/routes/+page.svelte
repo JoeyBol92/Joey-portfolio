@@ -222,20 +222,6 @@
 			<a href="/portfolio/dend/" class="pointer transition hover:-translate-y-1">
 				<div class="h-full rounded-lg border bg-white shadow-sm">
 					<div class="flex flex-col items-center p-6 text-center">
-						<!-- <svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							class="lucide lucide-code h-8 w-8 text-[#00A9FF]"
-							><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"
-							></polyline></svg
-						> -->
 						<enhanced:img
 							src="/static/img/portfolio/logo.png"
 							alt="logo-svelte"
