@@ -288,7 +288,7 @@
 						Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
 						bouwen van websiteprojecten volgens de beunhaas-methode.
 					</p>
-					<a href="/diensten/budget-site/">
+					<a href="/methoden/budget-site/">
 						<button
 							class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
 							>Meer informatie over een budget site
@@ -328,7 +328,7 @@
 						Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
 						bouwen van websiteprojecten volgens de beunhaas-methode.
 					</p>
-					<a href="/diensten/statische-website/">
+					<a href="/methoden/statische-website/">
 						<button
 							class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
 							>Meer informatie over een statische website
@@ -374,7 +374,7 @@
 						Hoi ik ben Joey, een echte beunhaas. Ik heb meer dan 7 jaar ervaring in het managen en
 						bouwen van websiteprojecten volgens de beunhaas-methode.
 					</p>
-					<a href="/diensten/headless/">
+					<a href="/methoden/headless/">
 						<button
 							class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
 							>Meer informatie over een Headless CMS

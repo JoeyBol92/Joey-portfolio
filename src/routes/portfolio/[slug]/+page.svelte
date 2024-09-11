@@ -4,6 +4,42 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>{data.portfolio.fields.seoTitel} &copy;</title>
+	<meta name="description" content={data.portfolio.fields.seoMetabeschrijving} />
+	<link rel="canonical" href="https://jojobee.nl/portfolio/{data.portfolio.fields.slug}/" />
+	<meta name="robots" content="index" />
+	<meta property="og:title" content="{data.portfolio.fields.seoTitel} &copy;" />
+	<meta property="og:url" content="https://jojobee.nl/portfolio/{data.portfolio.fields.slug}/" />
+	<meta
+		property="og:image"
+		content={data.portfolio.fields.featuredImagePortfolio.fields.file.url}
+	/>
+	<meta
+		property="og:image:alt"
+		content={data.portfolio.fields.featuredImagePortfolio.fields.description}
+	/>
+	<meta property="og:type" content="WebPage" />
+	<meta property="og:description" content={data.portfolio.fields.seoMetabeschrijving} />
+	<meta property="og:locale" content="nl" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="JojoBee: websites op maat &copy; {new Date().getFullYear()}"
+	/>
+	<meta name="twitter:url" content="https://jojobee.nl/portfolio/{data.portfolio.fields.slug}/" />
+	<meta name="twitter:description" content={data.portfolio.fields.seoMetabeschrijving} />
+	<meta
+		name="twitter:image"
+		content={data.portfolio.fields.featuredImagePortfolio.fields.file.url}
+	/>
+	<meta
+		name="twitter:image:alt"
+		content={data.portfolio.fields.featuredImagePortfolio.fields.description}
+	/>
+</svelte:head>
+
 <section class="container mx-auto mb-12 max-w-7xl pt-20 sm:px-8 md:px-6 md:pt-32">
 	<div class="px-[25px]">
 		<h1 class="mb-4 text-center text-3xl md:text-5xl">
@@ -112,7 +148,7 @@
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
 		<div class="mb-12 grid gap-8 md:grid-cols-2">
-			<div class="bg-card text-card-foreground rounded-lg border shadow-sm">
+			<div class="rounded-lg border shadow-sm">
 				<div class="p-6">
 					<h2 class="mb-4 text-2xl font-bold">Eigenschappen</h2>
 					<ul class="list-disc space-y-2 pl-5">
@@ -122,7 +158,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="bg-card text-card-foreground rounded-lg border shadow-sm">
+			<div class="-lg border shadow-sm">
 				<div class="p-6">
 					<h2 class="mb-4 text-2xl font-bold">Technieken</h2>
 					<div class="flex flex-wrap gap-2">
@@ -179,3 +215,6 @@
 		</div>
 	</div>
 </div>
+<pre>
+	{JSON.stringify(data.portfolio, null, 2)}
+	</pre>
