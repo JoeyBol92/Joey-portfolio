@@ -146,7 +146,3 @@
 		</div>
 	</div>
 </div>
-
-<pre>
-	{JSON.stringify(data.methoden, null, 2)}
-	</pre>
