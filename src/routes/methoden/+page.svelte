@@ -57,7 +57,7 @@
 				</p>
 				<a href="/methoden/wordpress/">
 					<button
-						class="inline-flex h-14 w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white md:h-10"
+						class="inline-flex h-12 w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
 						>Meer informatie over een WordPress site
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@
 				</p>
 				<a href="/methoden/statische-website/">
 					<button
-						class="inline-flex h-14 w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white md:h-10"
+						class="inline-flex h-12 w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
 						>Meer informatie over een statische website
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@
 				</p>
 				<a href="/methoden/headless/">
 					<button
-						class="inline-flex h-14 w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white md:h-10"
+						class="inline-flex h-12 w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
 						>Meer informatie over een Headless CMS
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
