@@ -93,7 +93,6 @@
 			<div class="p-6">
 				<h2 class="mb-4 text-2xl font-bold">Het proces</h2>
 				<div class="space-y-6">
-					<!-- Each begin -->
 					{#each data.methoden.fields.proces.flow as stap}
 						<div class="flex">
 							<div class="mr-4 flex-shrink-0">
@@ -109,7 +108,6 @@
 							</div>
 						</div>
 					{/each}
-					<!-- Each end -->
 				</div>
 			</div>
 		</div>

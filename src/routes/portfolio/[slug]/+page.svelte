@@ -24,10 +24,7 @@
 	<meta property="og:locale" content="nl" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta
-		name="twitter:title"
-		content="JojoBee: websites op maat &copy; {new Date().getFullYear()}"
-	/>
+	<meta name="twitter:title" content="{data.portfolio.fields.seoTitel} &copy;" />
 	<meta name="twitter:url" content="https://jojobee.nl/portfolio/{data.portfolio.fields.slug}/" />
 	<meta name="twitter:description" content={data.portfolio.fields.seoMetabeschrijving} />
 	<meta
@@ -42,7 +39,7 @@
 
 <section class="container mx-auto mb-12 max-w-7xl pt-20 sm:px-8 md:px-6 md:pt-32">
 	<div class="px-[25px]">
-		<h1 class="mb-4 text-center text-3xl md:text-5xl">
+		<h1 class="mb-8 text-center text-3xl md:text-5xl">
 			{@html data.portfolio.fields.title_portfolio}
 		</h1>
 		<img
@@ -215,6 +212,3 @@
 		</div>
 	</div>
 </div>
-<pre>
-	{JSON.stringify(data.portfolio, null, 2)}
-	</pre>
