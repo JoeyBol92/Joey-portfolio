@@ -39,9 +39,7 @@
 
 <section class="container mx-auto mb-12 max-w-7xl pt-20 sm:px-8 md:px-6 md:pt-32">
 	<div class="grid gap-8 px-[25px] md:grid-cols-3">
-		<div
-			class="bg-card text-card-foreground h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm"
-		>
+		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
 			<div class="flex flex-col items-center p-6">
 				<div class="mb-4 flex items-center">
 					<h3 class="mr-2 text-xl font-semibold">WordPress</h3>
@@ -59,7 +57,7 @@
 				</p>
 				<a href="/methoden/wordpress/">
 					<button
-						class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+						class="inline-flex h-14 w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white md:h-10"
 						>Meer informatie over een WordPress site
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -77,9 +75,7 @@
 				</a>
 			</div>
 		</div>
-		<div
-			class="bg-card text-card-foreground h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm"
-		>
+		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
 			<div class="flex flex-col items-center p-6">
 				<div class="mb-4 flex items-center">
 					<h3 class="mr-2 text-xl font-semibold">Static website</h3>
@@ -98,7 +94,7 @@
 				</p>
 				<a href="/methoden/statische-website/">
 					<button
-						class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+						class="inline-flex h-14 w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white md:h-10"
 						>Meer informatie over een statische website
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -116,9 +112,7 @@
 				</a>
 			</div>
 		</div>
-		<div
-			class="bg-card text-card-foreground h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm"
-		>
+		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
 			<div class="flex flex-col items-center p-6">
 				<div class="mb-4 flex items-center">
 					<h3 class="mr-2 text-xl font-semibold">Headless CMS</h3>
@@ -143,7 +137,7 @@
 				</p>
 				<a href="/methoden/headless/">
 					<button
-						class="ring-offset-background focus-visible:ring-ring border-input bg-background inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+						class="inline-flex h-14 w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white md:h-10"
 						>Meer informatie over een Headless CMS
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
