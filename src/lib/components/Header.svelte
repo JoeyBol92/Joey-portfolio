@@ -64,10 +64,26 @@
 		</div>
 		<ul class="mx-auto py-4 text-center text-[#000]">
 			<li>
-				<a href="/methoden/" class="hover:text-blue-700 active:text-blue-700">Methoden</a>
+				<a
+					href="/methoden/"
+					class="hover:text-blue-700 active:text-blue-700"
+					on:click={() => (open = !open)}>Methoden</a
+				>
 			</li>
-			<li><a href="/portfolio/" class="hover:text-blue-700 active:text-blue-700">Portfolio</a></li>
-			<li><a href="/contact/" class="hover:text-blue-700 active:text-blue-700">Contact</a></li>
+			<li>
+				<a
+					href="/portfolio/"
+					class="hover:text-blue-700 active:text-blue-700"
+					on:click={() => (open = !open)}>Portfolio</a
+				>
+			</li>
+			<li>
+				<a
+					href="/contact/"
+					class="hover:text-blue-700 active:text-blue-700"
+					on:click={() => (open = !open)}>Contact</a
+				>
+			</li>
 		</ul>
 	</div>
 </header>
