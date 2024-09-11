@@ -11,9 +11,6 @@
 				</a>
 				<ul class="space-y-1 px-4">
 					<li>Joey Bol</li>
-					<li>Ergens 1</li>
-					<li>1234AB Ergens</li>
-
 					<li>&copy; {new Date().getFullYear()}</li>
 				</ul>
 			</div>
@@ -21,8 +18,7 @@
 				<div>
 					<h3 class="pb-2">Contact</h3>
 					<ul class="space-y-1">
-						<li>mail@mail</li>
-						<li>06 123 45 678</li>
+						<li>jlwbol92@gmail.com</li>
 					</ul>
 				</div>
 				<div>

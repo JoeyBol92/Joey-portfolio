@@ -26,7 +26,7 @@
 					<li>
 						<a href="/portfolio/" class="hover:text-[#00A9FF] active:text-blue-700">Portfolio</a>
 					</li>
-					<li><a href="/contact/" class="hover:text-[#00A9FF] active:text-blue-700">Contact</a></li>
+					<!-- <li><a href="/contact/" class="hover:text-[#00A9FF] active:text-blue-700">Contact</a></li> -->
 				</ul>
 			</div>
 			<button
@@ -77,13 +77,13 @@
 					on:click={() => (open = !open)}>Portfolio</a
 				>
 			</li>
-			<li>
+			<!-- <li>
 				<a
 					href="/contact/"
 					class="hover:text-blue-700 active:text-blue-700"
 					on:click={() => (open = !open)}>Contact</a
 				>
-			</li>
+			</li> -->
 		</ul>
 	</div>
 </header>
