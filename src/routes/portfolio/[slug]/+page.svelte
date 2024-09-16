@@ -155,7 +155,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="-lg border shadow-sm">
+			<div class="rounded-lg border shadow-sm">
 				<div class="p-6">
 					<h2 class="mb-4 text-2xl font-bold">Technieken</h2>
 					<div class="flex flex-wrap gap-2">
