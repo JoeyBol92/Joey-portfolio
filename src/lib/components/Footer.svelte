@@ -8,7 +8,7 @@
 			<div class=" left-0 top-0 col-span-2 w-[180px] bg-white">
 				<a href="/">
 					<img
-						src="./img/logo-jojobee.svg"
+						src="/img/logo-jojobee.svg"
 						alt="logo"
 						class="w-auto px-4 pb-4"
 						width="148"
