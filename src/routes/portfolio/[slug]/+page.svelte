@@ -72,7 +72,7 @@
 					>
 				</div>
 				<div>
-					<h3 class="font-semibold text-gray-600">Klant</h3>
+					<h2 class="font-semibold text-gray-600">Klant</h2>
 					<p class="text-lg">{@html data.portfolio.fields.client}</p>
 				</div>
 			</div>
@@ -100,7 +100,7 @@
 					>
 				</div>
 				<div>
-					<h3 class="font-semibold text-gray-600">Datum</h3>
+					<h2 class="font-semibold text-gray-600">Datum</h2>
 					<p class="text-lg">{@html data.portfolio.fields.date}</p>
 				</div>
 			</div>
@@ -124,7 +124,7 @@
 					>
 				</div>
 				<div>
-					<h3 class="font-semibold text-gray-600">Categorie</h3>
+					<h2 class="font-semibold text-gray-600">Categorie</h2>
 					<p class="text-lg">{@html data.portfolio.fields.categorie}</p>
 				</div>
 			</div>
