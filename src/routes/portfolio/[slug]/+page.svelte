@@ -135,7 +135,9 @@
 	<div class="px-[25px]">
 		<div class="rounded-lg border p-6 shadow-sm">
 			<h2 class="mb-4 text-2xl font-bold">Projectomschrijving</h2>
-			<div class="prose-p:mb-5 prose-p:text-gray-600">
+			<div
+				class="prose-p:mb-5 prose-p:text-gray-600 prose-ul:list-disc prose-ul:space-y-2 prose-ul:pl-5"
+			>
 				{@html documentToHtmlString(data.portfolio.fields.projectBeschrijving)}
 			</div>
 		</div>
