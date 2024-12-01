@@ -44,7 +44,8 @@
 		</h1>
 		<img
 			src={data.portfolio.fields.featuredImagePortfolio.fields.file.url}
-			alt={data.portfolio.fields.featuredImagePortfolio.fields.description}
+			alt={data.portfolio.fields.featuredImagePortfolio.fields.description ||
+				data.portfolio.fields.featuredImagePortfolio.fields.title}
 			class="h-96 w-full rounded-lg object-cover object-top shadow-xl"
 		/>
 	</div>
@@ -180,7 +181,7 @@
 				{#each data.portfolio.fields.media as media}
 					<img
 						src={media.fields.file.url}
-						alt={media.fields.description}
+						alt={media.fields.description || media.fields.title}
 						class=" h-96 w-full rounded-lg object-cover object-top shadow-md"
 					/>
 				{/each}
