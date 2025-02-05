@@ -1,7 +1,7 @@
 <script>
 	import Container from '$lib/components/Container.svelte';
 
-	let open = false;
+	let open = $state(false);
 </script>
 
 <header class="border-b-[2px] border-[#E0E5E6]">
@@ -32,7 +32,7 @@
 			<button
 				class="min-[769px]:hidden"
 				type="button"
-				on:click={() => (open = !open)}
+				onclick={() => (open = !open)}
 				aria-label="Mobile menu button open"
 			>
 				<svg
@@ -58,7 +58,7 @@
 		class:!translate-y-0={open}
 	>
 		<div class="flex justify-end p-4">
-			<button type="button" on:click={() => (open = !open)} aria-label="Mobile menu button close">
+			<button type="button" onclick={() => (open = !open)} aria-label="Mobile menu button close">
 				x
 			</button>
 		</div>
@@ -67,14 +67,14 @@
 				<a
 					href="/methoden/"
 					class="hover:text-blue-700 active:text-blue-700"
-					on:click={() => (open = !open)}>Methoden</a
+					onclick={() => (open = !open)}>Methoden</a
 				>
 			</li>
 			<li>
 				<a
 					href="/portfolio/"
 					class="hover:text-blue-700 active:text-blue-700"
-					on:click={() => (open = !open)}>Portfolio</a
+					onclick={() => (open = !open)}>Portfolio</a
 				>
 			</li>
 			<!-- <li>

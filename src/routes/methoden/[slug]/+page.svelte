@@ -1,7 +1,8 @@
 <script>
 	import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 
-	export let data;
+	/** @type {{data: any}} */
+	let { data } = $props();
 </script>
 
 <svelte:head>
