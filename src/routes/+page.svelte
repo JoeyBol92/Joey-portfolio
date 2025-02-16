@@ -287,7 +287,7 @@
 </section>
 
 <!-- Maak kennis met Joey -->
-<section class="px-[25px] py-20">
+<!-- <section class="px-[25px] py-20">
 	<div class="container mx-auto px-4">
 		<div class="mx-auto max-w-3xl">
 			<div class="grid grid-cols-1 items-center gap-x-8 md:grid-cols-3">
@@ -328,4 +328,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
