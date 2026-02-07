@@ -23,14 +23,12 @@
 	<meta name="twitter:description" content="Ik maak website op maat voor jou en supersnel" />
 	<meta name="twitter:image" content="https://jojobee.nl/img/logo-jojobee.svg" />
 	<meta name="twitter:image:alt" content="Logo JojoBee" />
-
-	<!-- {@html `<script type="application/ld+json">${JSON.stringify(schema)}</script>`} -->
 </svelte:head>
 
-<!-- Intro -->
+<!-- Hero Section -->
 <section class="py-20 md:py-32">
 	<Container>
-		<div class="grid grid-cols-2 items-center max-[768px]:grid-cols-1">
+		<div class="grid grid-cols-2 items-center gap-12 max-[768px]:grid-cols-1 lg:gap-20">
 			<div class="px-[25px]">
 				<h1 class="mb-4 text-3xl md:text-5xl">Welcome bij JojoBee!</h1>
 				<p>
@@ -42,10 +40,7 @@
 				<div class="item-center pb-8">
 					<div>
 						<a href="/portfolio/" aria-label="Link naar portfolio">
-							<button
-								class="mt-4 flex items-center justify-between rounded-lg bg-[#00A9FF] px-8 py-3 font-normal text-white transition hover:-translate-y-1 hover:opacity-70"
-								aria-label="My work"
-							>
+							<button class="btn-primary mt-4" aria-label="My work">
 								<span>Bekijk mijn werk</span>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -58,19 +53,47 @@
 									stroke-linecap="round"
 									stroke-linejoin="round"
 									class="lucide lucide-chevron-right ml-2 h-5 w-5"
-									><path d="m9 18 6-6-6-6"></path></svg
 								>
+									<path d="m9 18 6-6-6-6"></path>
+								</svg>
 							</button>
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="mx-auto">
-				<enhanced:img
-					src="/static/Joey-and-Emilio.jpg"
-					class="h-64 w-64 items-center rounded-full border-4 border-[#00A9FF] object-cover object-top shadow-lg md:h-80 md:w-80"
-					alt="Joey en zijn hond"
-				/>
+
+			<!-- Decorative Hero Image -->
+			<div class="relative animate-fade-up opacity-0 stagger-2">
+				<div class="relative mx-auto aspect-square max-w-md">
+					<!-- Decorative rings -->
+					<div
+						class="absolute inset-0 animate-float rounded-full border-2 border-dashed border-primary-200"
+					></div>
+					<div class="absolute inset-4 rounded-full border-2 border-dashed border-primary-100"></div>
+
+					<!-- Image -->
+					<div
+						class="absolute inset-8 overflow-hidden rounded-full bg-gradient-to-br from-primary-500 to-primary-400 p-1 shadow-2xl shadow-primary-500/25"
+					>
+						<enhanced:img
+							src="/static/Joey-and-Emilio.jpg"
+							class="h-full w-full rounded-full object-cover object-top"
+							alt="Joey en zijn hond Emilio"
+						/>
+					</div>
+
+					<!-- Floating badges -->
+					<div
+						class="absolute -right-4 top-1/4 rounded-xl bg-white p-3 shadow-xl shadow-slate-200/50"
+					>
+						<img src="/img/svelte-logo.svg" alt="Svelte" class="h-8 w-8" />
+					</div>
+					<div
+						class="absolute -left-4 bottom-1/4 rounded-xl bg-white p-3 shadow-xl shadow-slate-200/50"
+					>
+						<img src="/img/wordpress-logo.svg" alt="WordPress" class="h-8 w-8" />
+					</div>
+				</div>
 			</div>
 		</div>
 	</Container>
@@ -80,10 +103,10 @@
 <section class="py-10">
 	<Container>
 		<div>
-			<h2 class="mb-4 text-center text-2xl md:text-4xl">Mijn methoden</h2>
+			<h2 class="section-title">Mijn methoden</h2>
 		</div>
 		<div class="grid gap-8 py-10 md:grid-cols-3">
-			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
+			<div class="card card-accent card-hover h-full">
 				<div class="flex flex-col items-center p-6">
 					<div class="mb-4 flex items-center">
 						<h3 class="mr-2 text-xl font-semibold">WordPress</h3>
@@ -100,9 +123,8 @@
 						weinig budget kan je met succes een mooie website bouwen.
 					</p>
 					<a href="/methoden/wordpress/">
-						<button
-							class="inline-flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
-							>Lees meer over een WordPress site
+						<button class="btn-secondary w-full text-sm ">
+							<span>Lees meer over een WordPress site</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="24"
@@ -113,13 +135,15 @@
 								stroke-width="2"
 								stroke-linecap="round"
 								stroke-linejoin="round"
-								class="ml-2 h-5 w-5"><path d="m9 18 6-6-6-6"></path></svg
+								class="ml-2 h-5 w-5"
 							>
+								<path d="m9 18 6-6-6-6"></path>
+							</svg>
 						</button>
 					</a>
 				</div>
 			</div>
-			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
+			<div class="card card-accent card-hover h-full">
 				<div class="flex flex-col items-center p-6">
 					<div class="mb-4 flex items-center">
 						<h3 class="mr-2 text-xl font-semibold">Static website</h3>
@@ -137,9 +161,8 @@
 						WordPress bijvoorbeeld. Ideaal voor websites zonder onderhoud.
 					</p>
 					<a href="/methoden/statische-website/">
-						<button
-							class="inline-flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
-							>Lees meer over een statische website
+						<button class="btn-secondary w-full text-sm">
+							<span>Lees meer over een statische website</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="24"
@@ -151,13 +174,14 @@
 								stroke-linecap="round"
 								stroke-linejoin="round"
 								class="lucide lucide-chevron-right ml-2 h-5 w-5"
-								><path d="m9 18 6-6-6-6"></path></svg
 							>
+								<path d="m9 18 6-6-6-6"></path>
+							</svg>
 						</button>
 					</a>
 				</div>
 			</div>
-			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
+			<div class="card card-accent card-hover h-full">
 				<div class="flex flex-col items-center p-6">
 					<div class="mb-4 flex items-center">
 						<h3 class="mr-2 text-xl font-semibold">Headless CMS</h3>
@@ -181,9 +205,8 @@
 						voor websites met veel bezoek en waar dagelijks veel werk in wordt verricht.
 					</p>
 					<a href="/methoden/headless/">
-						<button
-							class="inline-flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
-							>Lees meer over een Headless CMS
+						<button class="btn-secondary w-full text-sm">
+							<span>Lees meer over een Headless CMS</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="24"
@@ -195,8 +218,9 @@
 								stroke-linecap="round"
 								stroke-linejoin="round"
 								class="lucide lucide-chevron-right ml-2 h-5 w-5"
-								><path d="m9 18 6-6-6-6"></path></svg
 							>
+								<path d="m9 18 6-6-6-6"></path>
+							</svg>
 						</button>
 					</a>
 				</div>
@@ -205,68 +229,130 @@
 	</Container>
 </section>
 
-<!-- Portfolio -->
+<!-- Portfolio Section -->
 <section class="bg-gray-50 px-[25px] py-20">
 	<Container>
 		<div>
-			<h2 class="mb-4 text-center text-2xl md:text-4xl">Mijn bijdragen</h2>
+			<h2 class="section-title">Mijn bijdragen</h2>
 		</div>
 		<div class="grid gap-8 py-10 md:grid-cols-3">
-			<a href="/portfolio/dend/" class="pointer transition hover:-translate-y-1">
-				<div class="h-full rounded-lg border bg-white shadow-xs">
-					<div class="flex flex-col items-center p-6 text-center">
+			<!-- DitjesenDatjes -->
+			<a href="/portfolio/dend/" class="portfolio-card group">
+				<div class="portfolio-card-image">
+					<div class="absolute inset-0 flex items-center justify-center p-8">
 						<enhanced:img
 							src="/static/img/portfolio/logo.png"
-							alt="logo-svelte"
-							class="ml-2 h-[50px] w-auto"
+							alt="DitjesenDatjes logo"
+							class="max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
 						/>
-						<h3 class="mb-2 mt-4 text-xl font-semibold">DitjesenDatjes</h3>
-						<p class="text-gray-600">
-							In opdracht van Trusted Media heb ik in dienst van Performance Department samen met
-							mijn collega Hessel Middendorp een nieuwe opzet gerealiseerd.
-						</p>
+					</div>
+					<div class="portfolio-card-overlay">
+						<span class="flex items-center gap-2 font-medium text-white">
+							Bekijk project
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m9 18 6-6-6-6"></path>
+							</svg>
+						</span>
 					</div>
 				</div>
+				<div class="p-6 text-center">
+					<h3 class="mb-2 text-xl font-semibold">DitjesenDatjes</h3>
+					<p class="text-gray-600">
+						In opdracht van Trusted Media heb ik in dienst van Performance Department samen met
+						mijn collega Hessel Middendorp een nieuwe opzet gerealiseerd.
+					</p>
+				</div>
 			</a>
-			<a href="/portfolio/bukett/" class="pointer transition hover:-translate-y-1">
-				<div class="h-full rounded-lg border bg-white shadow-xs">
-					<div class="flex flex-col items-center p-6 text-center">
+
+			<!-- Bukett -->
+			<a href="/portfolio/bukett/" class="portfolio-card group">
+				<div class="portfolio-card-image">
+					<div class="absolute inset-0 flex items-center justify-center p-8">
 						<enhanced:img
 							src="/static/img/portfolio/Bukett_Woordmerk_RGB_Zwart_144dpi.png"
-							alt="logo-svelte"
-							class="ml-2 h-[50px] w-auto"
+							alt="Bukett logo"
+							class="max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
 						/>
-						<h3 class="mb-2 mt-4 text-xl font-semibold">Bukett</h3>
-						<p class="text-gray-600">
-							In opdracht van Doxflow B.V. heb ik in dienst van Performance Department de website
-							https://www.bukett.nl gebouwd.
-						</p>
+					</div>
+					<div class="portfolio-card-overlay">
+						<span class="flex items-center gap-2 font-medium text-white">
+							Bekijk project
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m9 18 6-6-6-6"></path>
+							</svg>
+						</span>
 					</div>
 				</div>
+				<div class="p-6 text-center">
+					<h3 class="mb-2 text-xl font-semibold">Bukett</h3>
+					<p class="text-gray-600">
+						In opdracht van Doxflow B.V. heb ik in dienst van Performance Department de website
+						https://www.bukett.nl gebouwd.
+					</p>
+				</div>
 			</a>
-			<a href="/portfolio/ams-advocaten/" class="pointer transition hover:-translate-y-1">
-				<div class="h-full rounded-lg border bg-white shadow-xs">
-					<div class="flex flex-col items-center p-6 text-center">
+
+			<!-- AMS Advocaten -->
+			<a href="/portfolio/ams-advocaten/" class="portfolio-card group">
+				<div class="portfolio-card-image">
+					<div class="absolute inset-0 flex items-center justify-center p-8">
 						<enhanced:img
 							src="/static/img/portfolio/logo-ams-advocaten.png"
-							alt="logo-svelte"
-							class="ml-2 h-[50px] w-auto"
+							alt="AMS Advocaten logo"
+							class="max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
 						/>
-						<h3 class="mb-2 mt-4 text-xl font-semibold">AMS Advocaten</h3>
-						<p class="text-gray-600">
-							In opdracht van AMS Advocaten heb ik in dienst van Performance Department samen met
-							mijn collega Hessel Middendorp een nieuwe opzet gerealiseerd.
-						</p>
 					</div>
+					<div class="portfolio-card-overlay">
+						<span class="flex items-center gap-2 font-medium text-white">
+							Bekijk project
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="m9 18 6-6-6-6"></path>
+							</svg>
+						</span>
+					</div>
+				</div>
+				<div class="p-6 text-center">
+					<h3 class="mb-2 text-xl font-semibold">AMS Advocaten</h3>
+					<p class="text-gray-600">
+						In opdracht van AMS Advocaten heb ik in dienst van Performance Department samen met
+						mijn collega Hessel Middendorp een nieuwe opzet gerealiseerd.
+					</p>
 				</div>
 			</a>
 		</div>
 		<div class="flex justify-center">
 			<a href="/portfolio/" aria-label="button link naar portfolio">
-				<button
-					class="mt-4 flex items-center justify-between rounded-lg border bg-[#00A9FF] py-3 pl-4 pr-4 font-normal text-white transition hover:-translate-y-1 hover:bg-white hover:text-[#00A9FF]"
-					aria-label="Contact me"
-				>
+				<button class="btn-primary mt-4" aria-label="Contact me">
 					<span>Bekijk alle bijdragen</span>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -278,54 +364,12 @@
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="lucide lucide-chevron-right ml-2 h-5 w-5"><path d="m9 18 6-6-6-6"></path></svg
+						class="lucide lucide-chevron-right ml-2 h-5 w-5"
 					>
+						<path d="m9 18 6-6-6-6"></path>
+					</svg>
 				</button>
 			</a>
 		</div>
 	</Container>
 </section>
-
-<!-- Maak kennis met Joey -->
-<!-- <section class="px-[25px] py-20">
-	<div class="container mx-auto px-4">
-		<div class="mx-auto max-w-3xl">
-			<div class="grid grid-cols-1 items-center gap-x-8 md:grid-cols-3">
-				<div class="col-span-1 max-md:pb-8">
-					<enhanced:img
-						src="/static/Joey-learn-to-know.jpg"
-						alt="Joey standing"
-						class="w-full rounded-full border-4 border-[#00A9FF] object-cover shadow-lg max-md:mx-auto"
-					/>
-				</div>
-				<div class="col-span-2">
-					<h2 class="text-2xl md:mb-4 md:text-4xl">Maak kennis met Joey</h2>
-					<p class=" py-4 md:py-6">
-						Wil je meer weten over wat ik doe? Neem dan contact met mij op via onderstaande knop.
-					</p>
-					<a href="mailto:jlwbol92@gmail.com" aria-label="link om Joey te mailen">
-						<button
-							class="mt-4 flex items-center justify-between rounded-lg border bg-white py-3 pl-4 pr-4 font-normal text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
-							aria-label="Contact me"
-						>
-							<span>Neem contact op</span>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="lucide lucide-chevron-right ml-2 h-5 w-5"
-								><path d="m9 18 6-6-6-6"></path></svg
-							>
-						</button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->

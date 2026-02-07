@@ -1,14 +1,15 @@
 import { client } from '$lib/contentfulClient';
 import { error } from '@sveltejs/kit';
 
-export async function load({ params }) {
+/** @type {import('./$types').PageServerLoad} */
+export async function load() {
 	const portfolio = await client.getEntries({
-		'fields.slug': params.slug,
-		content_type: 'portfolioItem'
+		content_type: 'portfolioItem',
+		order: ['-sys.createdAt']
 	});
 
 	if (!portfolio.items.length) {
-		throw error(404, 'Pagina niet gevonden');
+		error(404, 'Pagina niet gevonden');
 	}
 
 	return {

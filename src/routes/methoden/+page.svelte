@@ -1,5 +1,5 @@
 <script>
-	import { tick } from 'svelte';
+	import Container from '$lib/components/Container.svelte';
 </script>
 
 <svelte:head>
@@ -34,12 +34,16 @@
 <section class="container mx-auto mb-12 max-w-7xl pt-20 sm:px-8 md:px-6 md:pt-32">
 	<div class="px-[25px]">
 		<h1 class="mb-4 text-center text-3xl md:text-5xl">Methoden</h1>
+		<p class="mx-auto max-w-2xl text-center text-gray-600">
+			Welk soort website past het best bij jou? Een standaard WordPress website? Of wellicht een
+			statische website of zelfs een Headless CMS? Ik leg je de verschillen graag uit.
+		</p>
 	</div>
 </section>
 
-<section class="container mx-auto mb-12 max-w-7xl pt-20 sm:px-8 md:px-6 md:pt-32">
+<section class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="grid gap-8 px-[25px] md:grid-cols-3">
-		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
+		<div class="card card-accent card-hover h-full">
 			<div class="flex flex-col items-center p-6">
 				<div class="mb-4 flex items-center">
 					<h3 class="mr-2 text-xl font-semibold">WordPress</h3>
@@ -56,9 +60,8 @@
 					budget kan je met succes een mooie website bouwen.
 				</p>
 				<a href="/methoden/wordpress/">
-					<button
-						class="inline-flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
-						>Lees meer over een WordPress site
+					<button class="btn-secondary w-full text-sm">
+						<span>Lees meer over een WordPress site</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="24"
@@ -69,13 +72,15 @@
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
-							class="lucide lucide-chevron-right ml-2 h-5 w-5"><path d="m9 18 6-6-6-6"></path></svg
+							class="ml-2 h-5 w-5"
 						>
+							<path d="m9 18 6-6-6-6"></path>
+						</svg>
 					</button>
 				</a>
 			</div>
 		</div>
-		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
+		<div class="card card-accent card-hover h-full">
 			<div class="flex flex-col items-center p-6">
 				<div class="mb-4 flex items-center">
 					<h3 class="mr-2 text-xl font-semibold">Static website</h3>
@@ -93,9 +98,8 @@
 					WordPress bijvoorbeeld. Ideaal voor websites zonder onderhoud.
 				</p>
 				<a href="/methoden/statische-website/">
-					<button
-						class="inline-flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
-						>Lees meer over een statische website
+					<button class="btn-secondary w-full text-sm">
+						<span>Lees meer over een statische website</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="24"
@@ -106,13 +110,15 @@
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
-							class="lucide lucide-chevron-right ml-2 h-5 w-5"><path d="m9 18 6-6-6-6"></path></svg
+							class="ml-2 h-5 w-5"
 						>
+							<path d="m9 18 6-6-6-6"></path>
+						</svg>
 					</button>
 				</a>
 			</div>
 		</div>
-		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
+		<div class="card card-accent card-hover h-full">
 			<div class="flex flex-col items-center p-6">
 				<div class="mb-4 flex items-center">
 					<h3 class="mr-2 text-xl font-semibold">Headless CMS</h3>
@@ -136,9 +142,8 @@
 					voor websites met veel bezoek en waar dagelijks veel werk in wordt verricht.
 				</p>
 				<a href="/methoden/headless/">
-					<button
-						class="inline-flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium text-[#00A9FF] transition hover:-translate-y-1 hover:bg-[#00A9FF] hover:text-white"
-						>Lees meer over een Headless CMS
+					<button class="btn-secondary w-full text-sm">
+						<span>Lees meer over een Headless CMS</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="24"
@@ -149,8 +154,10 @@
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
-							class="lucide lucide-chevron-right ml-2 h-5 w-5"><path d="m9 18 6-6-6-6"></path></svg
+							class="ml-2 h-5 w-5"
 						>
+							<path d="m9 18 6-6-6-6"></path>
+						</svg>
 					</button>
 				</a>
 			</div>

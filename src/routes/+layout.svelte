@@ -3,6 +3,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { onNavigate } from '$app/navigation';
+
 	/** @type {{children?: import('svelte').Snippet}} */
 	let { children } = $props();
 
@@ -21,6 +22,11 @@
 <svelte:head>
 	<title>JojoBee: websites op maat &copy; {new Date().getFullYear()}</title>
 </svelte:head>
-<Header />
-{@render children?.()}
-<Footer />
+
+<div class="flex min-h-screen flex-col">
+	<Header />
+	<main class="flex-1">
+		{@render children?.()}
+	</main>
+	<Footer />
+</div>

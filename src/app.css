@@ -1,33 +1,233 @@
 @import 'tailwindcss';
-
 @plugin '@tailwindcss/typography';
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
+/* =================================================================
+   Theme Configuration - Tailwind v4
+   ================================================================= */
+@theme {
+	/* Primary color palette - your blue */
+	--color-primary-50: #e0f7ff;
+	--color-primary-100: #b3ecff;
+	--color-primary-200: #80dfff;
+	--color-primary-300: #4dd2ff;
+	--color-primary-400: #26c6ff;
+	--color-primary-500: #00a9ff;
+	--color-primary-600: #0088cc;
+	--color-primary-700: #006699;
+	--color-primary-800: #004466;
+	--color-primary-900: #002233;
 
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
+	/* Animations */
+	--animate-float: float 6s ease-in-out infinite;
+	--animate-fade-up: fadeUp 0.6s ease-out forwards;
+
+	@keyframes float {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-10px);
+		}
+	}
+
+	@keyframes fadeUp {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}
+
+/* =================================================================
+   Base Styles
+   ================================================================= */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
+	* {
+		font-family: 'ABeeZee', sans-serif;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: 'ABeeZee', sans-serif;
+		font-weight: 800;
+		color: var(--color-slate-900);
+	}
+
+	body {
+		background-color: var(--color-slate-50);
+		color: var(--color-slate-600);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
 }
 
-* {
-	font-family: 'ABeeZee', sans-serif;
+/* =================================================================
+   Component Classes
+   ================================================================= */
+@layer components {
+	/* Buttons */
+	button {
+		cursor: pointer;
+	}
+	.btn-primary {
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 0.5rem;
+		background-color: var(--color-primary-500);
+		padding: 0.75rem 2rem;
+		font-weight: 400;
+		color: white;
+		box-shadow: 0 10px 15px -3px rgb(0 169 255 / 0.25);
+		transition: all 0.15s ease;
+	}
+
+	.btn-primary:hover {
+		background-color: var(--color-primary-600);
+		box-shadow: 0 20px 25px -5px rgb(0 169 255 / 0.3);
+		transform: translateY(-2px);
+	}
+
+	.btn-secondary {
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 0.5rem;
+		border: 1px solid var(--color-slate-200);
+		background-color: white;
+		padding: 0.75rem 2rem;
+		font-weight: 400;
+		color: var(--color-primary-500);
+		transition: all 0.15s ease;
+	}
+
+	.btn-secondary:hover {
+		border-color: var(--color-primary-500);
+		background-color: var(--color-primary-500);
+		color: white;
+		transform: translateY(-2px);
+	}
+
+	/* Cards */
+	.card {
+		border-radius: 0.5rem;
+		border: 1px solid var(--color-slate-200);
+		background-color: white;
+		box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	}
+
+	.card-hover {
+		transition: all 0.3s ease;
+	}
+
+	.card-hover:hover {
+		box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+		transform: translateY(-4px);
+	}
+
+	.card-accent {
+		border-top: 4px solid var(--color-primary-500);
+	}
+
+	/* Portfolio card */
+	.portfolio-card {
+		border-radius: 0.5rem;
+		border: 1px solid var(--color-slate-200);
+		background-color: white;
+		box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+		overflow: hidden;
+		padding: 0;
+		transition: all 0.3s ease;
+	}
+
+	.portfolio-card:hover {
+		box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+		transform: translateY(-4px);
+	}
+
+	.portfolio-card-image {
+		position: relative;
+		aspect-ratio: 16 / 9;
+		overflow: hidden;
+		background-color: var(--color-slate-100);
+	}
+
+	.portfolio-card-overlay {
+		position: absolute;
+		inset: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgb(0 169 255 / 0.9);
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	.portfolio-card:hover .portfolio-card-overlay {
+		opacity: 1;
+	}
+
+	/* Section styling */
+	.section-title {
+		margin-bottom: 1rem;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	@media (min-width: 768px) {
+		.section-title {
+			font-size: 2.25rem;
+		}
+	}
+
+	/* Icon wrapper */
+	.icon-wrapper {
+		margin-right: 1rem;
+		border-radius: 9999px;
+		background-color: var(--color-primary-500);
+		padding: 0.75rem;
+	}
+
+	/* Text link with arrow */
+	.link-arrow {
+		display: inline-flex;
+		align-items: center;
+		font-weight: 500;
+		color: var(--color-primary-500);
+		transition: all 0.15s ease;
+	}
+
+	.link-arrow:hover {
+		gap: 0.75rem;
+	}
+
+	/* Glass header effect */
+	.glass {
+		background: rgb(255 255 255 / 0.9);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		border-bottom: 1px solid var(--color-slate-200);
+	}
 }
 
-h1,
-h2,
-h3,
-h4 {
-	font-family: 'ABeeZee', sans-serif;
-	font-weight: 800;
+/* =================================================================
+   Utility Classes
+   ================================================================= */
+@layer utilities {
+	.stagger-1 {
+		animation-delay: 0.1s;
+	}
+	.stagger-2 {
+		animation-delay: 0.2s;
+	}
+	.stagger-3 {
+		animation-delay: 0.3s;
+	}
 }

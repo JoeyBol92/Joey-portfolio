@@ -1,5 +1,6 @@
 <script>
 	import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+	import Container from '$lib/components/Container.svelte';
 
 	/** @type {{data: any}} */
 	let { data } = $props();
@@ -46,7 +47,7 @@
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
 		<div class="mb-12 grid gap-8 md:grid-cols-2">
-			<div class="text-card-foreground rounded-lg border shadow-xs">
+			<div class="card">
 				<div class="p-6">
 					<h2 class="mb-4 text-2xl font-bold">Eigenschappen</h2>
 					<ul class="space-y-2">
@@ -62,23 +63,24 @@
 									stroke-width="2"
 									stroke-linecap="round"
 									stroke-linejoin="round"
-									class="lucide lucide-check mr-2 h-5 w-5 text-green-500"
-									><path d="M20 6 9 17l-5-5"></path></svg
+									class="mr-2 h-5 w-5 text-green-500"
 								>
+									<path d="M20 6 9 17l-5-5"></path>
+								</svg>
 								{@html eigenschap}
 							</li>
 						{/each}
 					</ul>
 				</div>
 			</div>
-			<div class=" ext-card-foreground rounded-lg border shadow-xs">
+			<div class="card">
 				<div class="p-6">
 					<h2 class="mb-4 text-2xl font-bold">Technieken</h2>
 					<div class="flex flex-wrap gap-2">
 						{#each data.methoden.fields.technieken as techniek}
-							<span class="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800"
-								>{@html techniek}</span
-							>
+							<span class="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800">
+								{@html techniek}
+							</span>
 						{/each}
 					</div>
 				</div>
@@ -90,13 +92,13 @@
 <!-- Proces -->
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
-		<div class="mb-12 rounded-lg border shadow-xs">
+		<div class="card mb-12">
 			<div class="p-6">
 				<h2 class="mb-4 text-2xl font-bold">Het proces</h2>
 				<div class="space-y-6">
 					{#each data.methoden.fields.proces.flow as stap}
 						<div class="flex">
-							<div class="mr-4 shrink-0">
+							<div class="mr-4 flex-shrink-0">
 								<div
 									class="flex h-8 w-8 items-center justify-center rounded-full bg-[#00A9FF] text-white"
 								>
@@ -118,7 +120,7 @@
 <!-- Voordelen -->
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
-		<div class="rounded-lg border shadow-xs">
+		<div class="card">
 			<div class="p-6">
 				<h2 class="mb-4 text-2xl font-bold">Voordelen</h2>
 				<ul class="grid gap-x-4 space-y-2 md:grid-cols-2">
@@ -134,9 +136,10 @@
 								stroke-width="2"
 								stroke-linecap="round"
 								stroke-linejoin="round"
-								class="lucide lucide-check mr-2 h-5 w-5 text-green-500"
-								data-id="59"><path d="M20 6 9 17l-5-5"></path></svg
+								class="mr-2 h-5 w-5 text-green-500"
 							>
+								<path d="M20 6 9 17l-5-5"></path>
+							</svg>
 							{@html voordeel}
 						</li>
 					{/each}
