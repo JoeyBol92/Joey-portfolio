@@ -83,7 +83,7 @@
 			<h2 class="mb-4 text-center text-2xl md:text-4xl">Mijn methoden</h2>
 		</div>
 		<div class="grid gap-8 py-10 md:grid-cols-3">
-			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
+			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
 				<div class="flex flex-col items-center p-6">
 					<div class="mb-4 flex items-center">
 						<h3 class="mr-2 text-xl font-semibold">WordPress</h3>
@@ -119,7 +119,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
+			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
 				<div class="flex flex-col items-center p-6">
 					<div class="mb-4 flex items-center">
 						<h3 class="mr-2 text-xl font-semibold">Static website</h3>
@@ -157,7 +157,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
+			<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
 				<div class="flex flex-col items-center p-6">
 					<div class="mb-4 flex items-center">
 						<h3 class="mr-2 text-xl font-semibold">Headless CMS</h3>
@@ -213,7 +213,7 @@
 		</div>
 		<div class="grid gap-8 py-10 md:grid-cols-3">
 			<a href="/portfolio/dend/" class="pointer transition hover:-translate-y-1">
-				<div class="h-full rounded-lg border bg-white shadow-sm">
+				<div class="h-full rounded-lg border bg-white shadow-xs">
 					<div class="flex flex-col items-center p-6 text-center">
 						<enhanced:img
 							src="/static/img/portfolio/logo.png"
@@ -229,7 +229,7 @@
 				</div>
 			</a>
 			<a href="/portfolio/bukett/" class="pointer transition hover:-translate-y-1">
-				<div class="h-full rounded-lg border bg-white shadow-sm">
+				<div class="h-full rounded-lg border bg-white shadow-xs">
 					<div class="flex flex-col items-center p-6 text-center">
 						<enhanced:img
 							src="/static/img/portfolio/Bukett_Woordmerk_RGB_Zwart_144dpi.png"
@@ -245,7 +245,7 @@
 				</div>
 			</a>
 			<a href="/portfolio/ams-advocaten/" class="pointer transition hover:-translate-y-1">
-				<div class="h-full rounded-lg border bg-white shadow-sm">
+				<div class="h-full rounded-lg border bg-white shadow-xs">
 					<div class="flex flex-col items-center p-6 text-center">
 						<enhanced:img
 							src="/static/img/portfolio/logo-ams-advocaten.png"

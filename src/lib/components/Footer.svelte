@@ -2,7 +2,7 @@
 	import Container from '$lib/components/Container.svelte';
 </script>
 
-<footer class="border-[#E0E5E6 border-t-[2px]">
+<footer class="border-[#E0E5E6 border-t-2">
 	<Container>
 		<div class="grid grid-cols-1 justify-end bg-white py-10 md:grid-cols-3">
 			<div class=" left-0 top-0 col-span-2 w-[180px] bg-white">

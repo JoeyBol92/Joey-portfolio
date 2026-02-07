@@ -39,7 +39,7 @@
 
 <section class="container mx-auto mb-12 max-w-7xl pt-20 sm:px-8 md:px-6 md:pt-32">
 	<div class="grid gap-8 px-[25px] md:grid-cols-3">
-		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
+		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
 			<div class="flex flex-col items-center p-6">
 				<div class="mb-4 flex items-center">
 					<h3 class="mr-2 text-xl font-semibold">WordPress</h3>
@@ -75,7 +75,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
+		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
 			<div class="flex flex-col items-center p-6">
 				<div class="mb-4 flex items-center">
 					<h3 class="mr-2 text-xl font-semibold">Static website</h3>
@@ -112,7 +112,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-sm">
+		<div class="h-full rounded-lg border border-t-4 border-[#00A9FF] shadow-xs">
 			<div class="flex flex-col items-center p-6">
 				<div class="mb-4 flex items-center">
 					<h3 class="mr-2 text-xl font-semibold">Headless CMS</h3>

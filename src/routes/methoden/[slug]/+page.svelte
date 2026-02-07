@@ -46,7 +46,7 @@
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
 		<div class="mb-12 grid gap-8 md:grid-cols-2">
-			<div class="text-card-foreground rounded-lg border shadow-sm">
+			<div class="text-card-foreground rounded-lg border shadow-xs">
 				<div class="p-6">
 					<h2 class="mb-4 text-2xl font-bold">Eigenschappen</h2>
 					<ul class="space-y-2">
@@ -71,7 +71,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class=" ext-card-foreground rounded-lg border shadow-sm">
+			<div class=" ext-card-foreground rounded-lg border shadow-xs">
 				<div class="p-6">
 					<h2 class="mb-4 text-2xl font-bold">Technieken</h2>
 					<div class="flex flex-wrap gap-2">
@@ -90,13 +90,13 @@
 <!-- Proces -->
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
-		<div class="mb-12 rounded-lg border shadow-sm">
+		<div class="mb-12 rounded-lg border shadow-xs">
 			<div class="p-6">
 				<h2 class="mb-4 text-2xl font-bold">Het proces</h2>
 				<div class="space-y-6">
 					{#each data.methoden.fields.proces.flow as stap}
 						<div class="flex">
-							<div class="mr-4 flex-shrink-0">
+							<div class="mr-4 shrink-0">
 								<div
 									class="flex h-8 w-8 items-center justify-center rounded-full bg-[#00A9FF] text-white"
 								>
@@ -118,7 +118,7 @@
 <!-- Voordelen -->
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
-		<div class="rounded-lg border shadow-sm">
+		<div class="rounded-lg border shadow-xs">
 			<div class="p-6">
 				<h2 class="mb-4 text-2xl font-bold">Voordelen</h2>
 				<ul class="grid gap-x-4 space-y-2 md:grid-cols-2">

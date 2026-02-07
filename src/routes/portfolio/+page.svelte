@@ -44,7 +44,7 @@
 	<div class="grid gap-8 px-[25px] md:grid-cols-3">
 		{#each data.portfolio as portfolio}
 			<div>
-				<div class=" flex h-full flex-col rounded-lg border shadow-sm">
+				<div class=" flex h-full flex-col rounded-lg border shadow-xs">
 					<img
 						src={portfolio.fields.logo.fields.file.url}
 						alt={portfolio.fields.logo.fields.description}
@@ -52,11 +52,11 @@
 						width={portfolio.fields.logo.fields.file.details.image.width}
 						height={portfolio.fields.logo.fields.file.details.image.height}
 					/>
-					<div class="flex flex-grow flex-col px-6 pb-6">
+					<div class="flex grow flex-col px-6 pb-6">
 						<h2 class="mb-2 text-center text-xl font-semibold">
 							{@html portfolio.fields.title_portfolio}
 						</h2>
-						<p class="mb-4 flex-grow text-gray-600">
+						<p class="mb-4 grow text-gray-600">
 							{@html portfolio.fields.seoMetabeschrijving}
 						</p>
 						<a

@@ -54,7 +54,7 @@
 
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="grid gap-8 px-[25px] md:grid-cols-3">
-		<div class="rounded-lg border shadow-sm">
+		<div class="rounded-lg border shadow-xs">
 			<div class="flex items-center p-6">
 				<div class="mr-4 rounded-full bg-[#00A9FF] p-3">
 					<svg
@@ -78,7 +78,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="rounded-lg border shadow-sm">
+		<div class="rounded-lg border shadow-xs">
 			<div class="flex items-center p-6">
 				<div class="mr-4 rounded-full bg-[#00A9FF] p-3">
 					<svg
@@ -106,7 +106,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="rounded-lg border shadow-sm">
+		<div class="rounded-lg border shadow-xs">
 			<div class="flex items-center p-6">
 				<div class="mr-4 rounded-full bg-[#00A9FF] p-3">
 					<svg
@@ -135,7 +135,7 @@
 
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
-		<div class="rounded-lg border p-6 shadow-sm">
+		<div class="rounded-lg border p-6 shadow-xs">
 			<h2 class="mb-4 text-2xl font-bold">Projectomschrijving</h2>
 			<div
 				class="prose-p:mb-5 prose-p:text-gray-600 prose-ul:list-disc prose-ul:space-y-2 prose-ul:pl-5"
@@ -149,7 +149,7 @@
 <div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
 	<div class="px-[25px]">
 		<div class="mb-12 grid gap-8 md:grid-cols-2">
-			<div class="rounded-lg border shadow-sm">
+			<div class="rounded-lg border shadow-xs">
 				<div class="p-6">
 					<h2 class="mb-4 text-2xl font-bold">Eigenschappen</h2>
 					<ul class="list-disc space-y-2 pl-5">
@@ -159,7 +159,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="rounded-lg border shadow-sm">
+			<div class="rounded-lg border shadow-xs">
 				<div class="p-6">
 					<h2 class="mb-4 text-2xl font-bold">Technieken</h2>
 					<div class="flex flex-wrap gap-2">
@@ -196,7 +196,7 @@
 		<div class="flex justify-center gap-4 md:flex-row">
 			<a href={data.portfolio.fields.websiteKlant} target="_blank" rel="nofollow">
 				<button
-					class="ring-offset-background focus-visible:ring-ring inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-[#00A9FF] px-4 py-2 text-sm font-medium text-white transition hover:-translate-y-1 hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none"
+					class="ring-offset-background focus-visible:ring-ring inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-[#00A9FF] px-4 py-2 text-sm font-medium text-white transition hover:-translate-y-1 hover:opacity-70 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"

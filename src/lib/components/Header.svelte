@@ -4,7 +4,7 @@
 	let open = $state(false);
 </script>
 
-<header class="border-b-[2px] border-[#E0E5E6]">
+<header class="border-b-2 border-[#E0E5E6]">
 	<Container>
 		<div class="relative flex items-center justify-end bg-white py-4">
 			<div class="absolute left-0 top-0 w-[180px] bg-white">
@@ -19,7 +19,7 @@
 				</a>
 			</div>
 			<div class="hidden items-center font-bold md:flex">
-				<ul class="ml-auto flex space-x-16 py-4 text-[#000]">
+				<ul class="ml-auto flex space-x-16 py-4 text-black">
 					<li>
 						<a href="/methoden/" class="hover:text-[#00A9FF] active:text-blue-700">Methoden</a>
 					</li>
@@ -62,7 +62,7 @@
 				x
 			</button>
 		</div>
-		<ul class="mx-auto py-4 text-center text-[#000]">
+		<ul class="mx-auto py-4 text-center text-black">
 			<li>
 				<a
 					href="/methoden/"
