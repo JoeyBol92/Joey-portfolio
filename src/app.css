@@ -231,3 +231,67 @@
 		animation-delay: 0.3s;
 	}
 }
+
+/* Default: forward navigation — new page comes from the right */
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 0.4s;
+	animation-timing-function: cubic-bezier(0.2, 0, 0, 1); /* M3 easing */
+}
+
+/* Forward: old slides left out, new slides in from right */
+::view-transition-old(root) {
+	animation-name: m3-slide-out-left;
+}
+::view-transition-new(root) {
+	animation-name: m3-slide-in-from-right;
+}
+
+/* Back: old slides right out, new slides in from left */
+[data-nav-direction='back']::view-transition-old(root) {
+	animation-name: m3-slide-out-right;
+}
+[data-nav-direction='back']::view-transition-new(root) {
+	animation-name: m3-slide-in-from-left;
+}
+
+@keyframes m3-slide-out-left {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateX(-30%);
+		opacity: 0;
+	}
+}
+@keyframes m3-slide-in-from-right {
+	from {
+		transform: translateX(30%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes m3-slide-out-right {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateX(30%);
+		opacity: 0;
+	}
+}
+@keyframes m3-slide-in-from-left {
+	from {
+		transform: translateX(-30%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
