@@ -232,6 +232,11 @@
 	}
 }
 
+/* =================================================================
+   Page navigation: move from right to left to new page and move
+   from left to right to previous page
+   ================================================================= */
+
 /* Default: forward navigation — new page comes from the right */
 ::view-transition-old(root),
 ::view-transition-new(root) {
@@ -247,7 +252,6 @@
 	animation-name: m3-slide-in-from-right;
 }
 
-/* Back: old slides right out, new slides in from left */
 [data-nav-direction='back']::view-transition-old(root) {
 	animation-name: m3-slide-out-right;
 }
