@@ -29,7 +29,7 @@
 <section class="py-20 md:py-32">
 	<Container>
 		<div class="grid grid-cols-2 items-center gap-12 max-[768px]:grid-cols-1 lg:gap-20">
-			<div class="px-[25px]">
+			<div class="px-6.25">
 				<h1 class="mb-4 text-3xl md:text-5xl">Welcome bij JojoBee!</h1>
 				<p>
 					Hoi ik ben Joey, een rasechte, positief ingestelde en enthousiaste Leidenaar met een
@@ -63,17 +63,19 @@
 			</div>
 
 			<!-- Decorative Hero Image -->
-			<div class="relative animate-fade-up opacity-0 stagger-2">
+			<div class="animate-fade-up stagger-2 relative opacity-0">
 				<div class="relative mx-auto aspect-square max-w-md">
 					<!-- Decorative rings -->
 					<div
-						class="absolute inset-0 animate-float rounded-full border-2 border-dashed border-primary-200"
+						class="animate-float border-primary-200 absolute inset-0 rounded-full border-2 border-dashed"
 					></div>
-					<div class="absolute inset-4 rounded-full border-2 border-dashed border-primary-100"></div>
+					<div
+						class="border-primary-100 absolute inset-4 rounded-full border-2 border-dashed"
+					></div>
 
 					<!-- Image -->
 					<div
-						class="absolute inset-8 overflow-hidden rounded-full bg-gradient-to-br from-primary-500 to-primary-400 p-1 shadow-2xl shadow-primary-500/25"
+						class="from-primary-500 to-primary-400 shadow-primary-500/25 absolute inset-8 overflow-hidden rounded-full bg-gradient-to-br p-1 shadow-2xl"
 					>
 						<enhanced:img
 							src="/static/Joey-and-Emilio.jpg"
@@ -84,12 +86,12 @@
 
 					<!-- Floating badges -->
 					<div
-						class="absolute -right-4 top-1/4 rounded-xl bg-white p-3 shadow-xl shadow-slate-200/50"
+						class="absolute top-1/4 -right-4 rounded-xl bg-white p-3 shadow-xl shadow-slate-200/50"
 					>
 						<img src="/img/svelte-logo.svg" alt="Svelte" class="h-8 w-8" />
 					</div>
 					<div
-						class="absolute -left-4 bottom-1/4 rounded-xl bg-white p-3 shadow-xl shadow-slate-200/50"
+						class="absolute bottom-1/4 -left-4 rounded-xl bg-white p-3 shadow-xl shadow-slate-200/50"
 					>
 						<img src="/img/wordpress-logo.svg" alt="WordPress" class="h-8 w-8" />
 					</div>
@@ -123,7 +125,7 @@
 						weinig budget kan je met succes een mooie website bouwen.
 					</p>
 					<a href="/methoden/wordpress/">
-						<button class="btn-secondary w-full text-sm ">
+						<button class="btn-secondary w-full text-sm">
 							<span>Lees meer over een WordPress site</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -268,8 +270,8 @@
 				<div class="p-6 text-center">
 					<h3 class="mb-2 text-xl font-semibold">DitjesenDatjes</h3>
 					<p class="text-gray-600">
-						In opdracht van Trusted Media heb ik in dienst van Performance Department samen met
-						mijn collega Hessel Middendorp een nieuwe opzet gerealiseerd.
+						In opdracht van Trusted Media heb ik in dienst van Performance Department samen met mijn
+						collega Hessel Middendorp een nieuwe opzet gerealiseerd.
 					</p>
 				</div>
 			</a>
@@ -344,8 +346,8 @@
 				<div class="p-6 text-center">
 					<h3 class="mb-2 text-xl font-semibold">AMS Advocaten</h3>
 					<p class="text-gray-600">
-						In opdracht van AMS Advocaten heb ik in dienst van Performance Department samen met
-						mijn collega Hessel Middendorp een nieuwe opzet gerealiseerd.
+						In opdracht van AMS Advocaten heb ik in dienst van Performance Department samen met mijn
+						collega Hessel Middendorp een nieuwe opzet gerealiseerd.
 					</p>
 				</div>
 			</a>
