@@ -43,9 +43,7 @@
 		<a href="/portfolio/" class="link-arrow" style="margin-bottom: 32px; display: inline-flex"
 			>← Terug naar portfolio</a
 		>
-		<div
-			style="display: grid; grid-template-columns: 7fr 5fr; gap: 64px; align-items: start; margin-top: 32px"
-		>
+		<div class="g-editorial" style="align-items: start; margin-top: 32px">
 			<div>
 				<div class="eyebrow">{@html data.portfolio.fields.categorie}</div>
 				<h1 style="margin-bottom: 24px">{@html data.portfolio.fields.title_portfolio}</h1>
@@ -114,7 +112,7 @@
 
 <!-- Projectomschrijving + Eigenschappen -->
 <section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
-	<div class="container" style="display: grid; grid-template-columns: 7fr 5fr; gap: 80px">
+	<div class="container g-editorial-wide">
 		<div>
 			<div class="rule-header">
 				<span class="rule-header__label">Projectomschrijving</span>
@@ -164,7 +162,7 @@
 				<span class="rule-header__label">Afbeeldingen</span>
 				<div class="rule-header__line"></div>
 			</div>
-			<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px">
+			<div class="g-2" style="gap: 24px">
 				{#each data.portfolio.fields.media as media}
 					<img
 						src={media.fields.file.url}
@@ -180,8 +178,8 @@
 <!-- CTA -->
 <section class="contact-band">
 	<div
-		class="container"
-		style="padding-block: 68px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center"
+		class="container g-cta"
+		style="padding-block: 68px"
 	>
 		<div>
 			<div

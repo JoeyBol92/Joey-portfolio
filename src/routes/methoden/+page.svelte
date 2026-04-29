@@ -46,8 +46,8 @@
 <!-- Methoden columns -->
 <section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
 	<div class="container">
-		<div style="display: grid; grid-template-columns: repeat(3, 1fr)">
-			<div style="padding-right: 44px; border-right: 1px solid var(--color-border)">
+		<div class="g-3 methoden-cols">
+			<div class="methoden-col methoden-col-1">
 				<div class="eyebrow">01</div>
 				<div style="margin-bottom: 16px">
 					<img
@@ -67,7 +67,7 @@
 					style="margin-top: 20px; display: inline-flex">Lees meer →</a
 				>
 			</div>
-			<div style="padding: 0 44px; border-right: 1px solid var(--color-border)">
+			<div class="methoden-col methoden-col-2">
 				<div class="eyebrow">02</div>
 				<div style="margin-bottom: 16px">
 					<img
@@ -87,7 +87,7 @@
 					style="margin-top: 20px; display: inline-flex">Lees meer →</a
 				>
 			</div>
-			<div style="padding-left: 44px">
+			<div class="methoden-col methoden-col-3">
 				<div class="eyebrow">03</div>
 				<div style="display: flex; gap: 8px; margin-bottom: 16px">
 					<img
@@ -118,10 +118,7 @@
 
 <!-- Contact CTA -->
 <section class="contact-band">
-	<div
-		class="container"
-		style="padding-block: 68px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center"
-	>
+	<div class="container g-cta" style="padding-block: 68px">
 		<div>
 			<div
 				style="font-size: 10px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--color-accent); font-weight: 700; margin-bottom: 20px"
@@ -150,12 +147,42 @@
 				>
 					Of direct
 				</div>
-				<div
-					style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: #fff"
-				>
+				<div style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: #fff">
 					Plan een gesprek →
 				</div>
 			</a>
 		</div>
 	</div>
 </section>
+
+<style>
+	.methoden-col-1 {
+		padding-right: 44px;
+		border-right: 1px solid var(--color-border);
+	}
+	.methoden-col-2 {
+		padding: 0 44px;
+		border-right: 1px solid var(--color-border);
+	}
+	.methoden-col-3 {
+		padding-left: 44px;
+	}
+
+	@media (max-width: 767px) {
+		.methoden-col-1 {
+			padding-right: 0;
+			padding-bottom: 32px;
+			border-right: none;
+			border-bottom: 1px solid var(--color-border);
+		}
+		.methoden-col-2 {
+			padding: 32px 0;
+			border-right: none;
+			border-bottom: 1px solid var(--color-border);
+		}
+		.methoden-col-3 {
+			padding-left: 0;
+			padding-top: 32px;
+		}
+	}
+</style>

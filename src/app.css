@@ -454,6 +454,53 @@
 	}
 }
 
+/* Responsive grid helpers — replace inline grid styles so breakpoints work */
+@layer components {
+	.g-hero {
+		display: grid;
+		grid-template-columns: 7fr 5fr;
+	}
+	.g-editorial {
+		display: grid;
+		grid-template-columns: 7fr 5fr;
+		gap: 64px;
+	}
+	.g-editorial-wide {
+		display: grid;
+		grid-template-columns: 7fr 5fr;
+		gap: 80px;
+	}
+	.g-2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.g-3 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.g-cta {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 64px;
+		align-items: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding-inline: 20px;
+	}
+	.g-hero,
+	.g-editorial,
+	.g-editorial-wide,
+	.g-2,
+	.g-3,
+	.g-cta {
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+}
+
 @layer utilities {
 	.text-accent {
 		color: var(--color-accent);

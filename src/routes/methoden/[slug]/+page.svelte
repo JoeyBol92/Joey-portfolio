@@ -48,7 +48,7 @@
 
 <!-- Eigenschappen + Technieken -->
 <section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
-	<div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px">
+	<div class="container g-2" style="gap: 64px">
 		<div>
 			<div class="rule-header">
 				<span class="rule-header__label">Eigenschappen</span>
@@ -124,7 +124,7 @@
 			<span class="rule-header__label">Voordelen</span>
 			<div class="rule-header__line"></div>
 		</div>
-		<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px 48px">
+		<div class="g-2 voordelen-grid" style="gap: 16px 48px">
 			{#each data.methoden.fields.voordelen as voordeel}
 				<div class="check-item">
 					<div class="check-item__dot">
@@ -150,10 +150,7 @@
 
 <!-- Contact CTA -->
 <section class="contact-band">
-	<div
-		class="container"
-		style="padding-block: 68px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center"
-	>
+	<div class="container g-cta" style="padding-block: 68px">
 		<div>
 			<div
 				style="font-size: 10px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--color-accent); font-weight: 700; margin-bottom: 20px"
@@ -182,9 +179,7 @@
 				>
 					Of direct
 				</div>
-				<div
-					style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: #fff"
-				>
+				<div style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: #fff">
 					Plan een gesprek →
 				</div>
 			</a>

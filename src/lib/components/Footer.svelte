@@ -1,8 +1,5 @@
 <footer style="border-top: 1px solid var(--color-border); background: var(--color-bg)">
-	<div
-		class="container"
-		style="padding-block: 48px 36px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px"
-	>
+	<div class="container g-3 footer-grid" style="padding-block: 48px 36px; gap: 40px">
 		<div>
 			<span
 				style="font-family: var(--font-display); font-size: 12px; letter-spacing: 3.5px; text-transform: uppercase; font-weight: 700; color: var(--color-fg)"
@@ -38,7 +35,7 @@
 		</div>
 	</div>
 	<div
-		style="border-top: 1px solid var(--color-border); padding: 16px 48px; display: flex; justify-content: space-between; max-width: var(--spacing-max); margin: 0 auto"
+		style="border-top: 1px solid var(--color-border); padding: 16px 20px; display: flex; justify-content: space-between; max-width: var(--spacing-max); margin: 0 auto"
 	>
 		<span style="font-size: 12px; color: var(--color-fg-muted)"
 			>© {new Date().getFullYear()} Joey Bol — JojoBee</span

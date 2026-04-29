@@ -9,7 +9,7 @@
 		const form = e.target;
 		const data = new FormData(form);
 
-		await fetch('/', {
+		await fetch('/contact/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			body: new URLSearchParams(data).toString()
@@ -43,8 +43,8 @@
 <!-- Form + info grid -->
 <section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
 	<div
-		class="container"
-		style="display: grid; grid-template-columns: 7fr 5fr; gap: 80px; align-items: start"
+		class="container g-editorial-wide"
+		style="align-items: start"
 	>
 		{#if submitted}
 			<div
@@ -68,7 +68,7 @@
 					<label>Laat dit leeg: <input name="bot-field" /></label>
 				</p>
 
-				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
+				<div class="g-2" style="gap: 16px">
 					<div style="display: flex; flex-direction: column; gap: 8px">
 						<label class="field-label" for="naam">Naam</label>
 						<input

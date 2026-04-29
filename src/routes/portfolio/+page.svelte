@@ -53,7 +53,7 @@
 	style="padding: 60px 0; border-bottom: 1px solid var(--color-border); background: var(--color-bg-sub)"
 >
 	<div class="container">
-		<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px">
+		<div class="g-3" style="gap: 16px">
 			{#each data.portfolio as item}
 				<a
 					href="/portfolio/{item.fields.slug}/"
@@ -94,8 +94,8 @@
 <!-- Contact CTA -->
 <section class="contact-band">
 	<div
-		class="container"
-		style="padding-block: 68px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center"
+		class="container g-cta"
+		style="padding-block: 68px"
 	>
 		<div>
 			<div

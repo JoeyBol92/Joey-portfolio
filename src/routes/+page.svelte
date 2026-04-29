@@ -28,22 +28,14 @@
 
 <!-- Hero -->
 <section style="border-bottom: 1px solid var(--color-border)">
-	<div class="container" style="display: grid; grid-template-columns: 7fr 5fr; min-height: 500px">
+	<div class="container g-hero" style="min-height: 500px">
 		<!-- Left: big display type -->
-		<div
-			style="padding: 60px 44px 60px 0; border-right: 1px solid var(--color-border); display: flex; flex-direction: column; justify-content: space-between"
-		>
-			<h1
-				class="fade-up"
-				style="font-size: clamp(64px, 8vw, 88px); letter-spacing: -4px; line-height: 0.9"
-			>
+		<div class="hero-left">
+			<h1 class="fade-up hero-heading">
 				Welkom bij<br />
 				<span style="-webkit-text-stroke: 3px var(--color-accent); color: transparent">JojoBee</span>
 			</h1>
-			<div
-				class="fade-up fade-up-d2"
-				style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding-top: 32px; border-top: 1px solid var(--color-border); margin-top: 32px"
-			>
+			<div class="fade-up fade-up-d2 hero-bottom" style="margin-top: 32px">
 				<p>
 					Hoi, ik ben Joey — enthousiaste webdeveloper uit Leiden. Van WordPress tot headless
 					SvelteKit: ik bouw wat werkt.
@@ -56,10 +48,8 @@
 		</div>
 
 		<!-- Right: circular hero -->
-		<div
-			style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 0 40px 48px"
-		>
-			<div class="fade-up fade-up-d2" style="position: relative; width: 320px; height: 320px">
+		<div class="hero-right">
+			<div class="fade-up fade-up-d2 hero-circle">
 				<div
 					class="animate-float"
 					style="position: absolute; inset: 0; border-radius: 50%; border: 2px dashed var(--color-accent); opacity: 0.3"
@@ -108,18 +98,16 @@
 			<div class="rule-header__line"></div>
 			<a href="/methoden/" class="rule-header__aside">Alles bekijken →</a>
 		</div>
-		<div style="display: grid; grid-template-columns: repeat(3, 1fr)">
-			<div style="padding-right: 44px; border-right: 1px solid var(--color-border)">
+		<div class="g-3 methoden-cols">
+			<div class="methoden-col methoden-col-1">
 				<div class="eyebrow">01</div>
 				<h3>WordPress</h3>
 				<p style="margin-top: 10px">Snel en budgetvriendelijk een mooie website opzetten.</p>
-				<a
-					href="/methoden/wordpress/"
-					class="link-arrow"
-					style="margin-top: 16px; display: inline-flex">Lees meer →</a
+				<a href="/methoden/wordpress/" class="link-arrow" style="margin-top: 16px; display: inline-flex"
+					>Lees meer →</a
 				>
 			</div>
-			<div style="padding: 0 44px; border-right: 1px solid var(--color-border)">
+			<div class="methoden-col methoden-col-2">
 				<div class="eyebrow">02</div>
 				<h3>Static website</h3>
 				<p style="margin-top: 10px">
@@ -131,7 +119,7 @@
 					style="margin-top: 16px; display: inline-flex">Lees meer →</a
 				>
 			</div>
-			<div style="padding-left: 44px">
+			<div class="methoden-col methoden-col-3">
 				<div class="eyebrow">03</div>
 				<h3>Headless CMS</h3>
 				<p style="margin-top: 10px">
@@ -148,16 +136,14 @@
 </section>
 
 <!-- Portfolio preview -->
-<section
-	style="padding: 60px 0; border-bottom: 1px solid var(--color-border); background: var(--color-bg-sub)"
->
+<section style="padding: 60px 0; border-bottom: 1px solid var(--color-border); background: var(--color-bg-sub)">
 	<div class="container">
 		<div class="rule-header">
 			<span class="rule-header__label">02 — Bijdragen</span>
 			<div class="rule-header__line"></div>
 			<a href="/portfolio/" class="rule-header__aside">Alles bekijken →</a>
 		</div>
-		<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px">
+		<div class="g-3" style="gap: 16px">
 			<a href="/portfolio/dend/" class="portfolio-card">
 				<div class="portfolio-card-image">
 					<enhanced:img
@@ -169,14 +155,10 @@
 						<span style="color: #fff; font-weight: 700; font-size: 14px">Bekijk project →</span>
 					</div>
 				</div>
-				<div
-					style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center"
-				>
+				<div style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center">
 					<div>
 						<div class="portfolio-tag">WordPress</div>
-						<div
-							style="font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-top: 2px"
-						>
+						<div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-top: 2px">
 							DitjesenDatjes
 						</div>
 					</div>
@@ -194,14 +176,10 @@
 						<span style="color: #fff; font-weight: 700; font-size: 14px">Bekijk project →</span>
 					</div>
 				</div>
-				<div
-					style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center"
-				>
+				<div style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center">
 					<div>
 						<div class="portfolio-tag">WordPress</div>
-						<div
-							style="font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-top: 2px"
-						>
+						<div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-top: 2px">
 							Bukett
 						</div>
 					</div>
@@ -219,14 +197,10 @@
 						<span style="color: #fff; font-weight: 700; font-size: 14px">Bekijk project →</span>
 					</div>
 				</div>
-				<div
-					style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center"
-				>
+				<div style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center">
 					<div>
 						<div class="portfolio-tag">WordPress</div>
-						<div
-							style="font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-top: 2px"
-						>
+						<div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-top: 2px">
 							AMS Advocaten
 						</div>
 					</div>
@@ -239,55 +213,30 @@
 
 <!-- Over mij -->
 <section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
-	<div
-		class="container"
-		style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center"
-	>
+	<div class="container g-2 about-grid" style="gap: 80px; align-items: center">
 		<div>
 			<div class="rule-header" style="margin-bottom: 28px">
 				<span class="rule-header__label">03 — Over mij</span>
 			</div>
-			<h2
-				style="font-size: clamp(32px, 4vw, 46px); letter-spacing: -1.5px; line-height: 1.02; margin-bottom: 20px"
-			>
+			<h2 style="font-size: clamp(32px, 4vw, 46px); letter-spacing: -1.5px; line-height: 1.02; margin-bottom: 20px">
 				Ik ben Joey,<br />uit Leiden.
 			</h2>
 			<p style="margin-bottom: 28px">
 				Rasechte Leidenaar, positief ingesteld en altijd enthousiast. Leergierig en pas tevreden als
 				anderen dat ook zijn.
 			</p>
-			<div
-				style="display: flex; gap: 36px; padding-top: 24px; border-top: 1px solid var(--color-border)"
-			>
+			<div style="display: flex; gap: 36px; padding-top: 24px; border-top: 1px solid var(--color-border)">
 				<div>
-					<div
-						style="font-family: var(--font-display); font-size: 36px; font-weight: 800; color: var(--color-fg); line-height: 1"
-					>
-						3+
-					</div>
-					<div
-						style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted); margin-top: 6px"
-					>
-						Jaar ervaring
-					</div>
+					<div style="font-family: var(--font-display); font-size: 36px; font-weight: 800; color: var(--color-fg); line-height: 1">3+</div>
+					<div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted); margin-top: 6px">Jaar ervaring</div>
 				</div>
 				<div>
-					<div
-						style="font-family: var(--font-display); font-size: 36px; font-weight: 800; color: var(--color-fg); line-height: 1"
-					>
-						10+
-					</div>
-					<div
-						style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted); margin-top: 6px"
-					>
-						Projecten
-					</div>
+					<div style="font-family: var(--font-display); font-size: 36px; font-weight: 800; color: var(--color-fg); line-height: 1">10+</div>
+					<div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted); margin-top: 6px">Projecten</div>
 				</div>
 			</div>
 		</div>
-		<div
-			style="border-radius: 14px; overflow: hidden; aspect-ratio: 3/4; border: 1px solid var(--color-border)"
-		>
+		<div class="about-photo" style="border-radius: 14px; overflow: hidden; aspect-ratio: 3/4; border: 1px solid var(--color-border)">
 			<enhanced:img
 				src="/static/img/Joey-standing.jpg"
 				alt="Joey Bol"
@@ -299,44 +248,132 @@
 
 <!-- Contact CTA -->
 <section class="contact-band">
-	<div
-		class="container"
-		style="padding-block: 68px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center"
-	>
+	<div class="container g-cta" style="padding-block: 68px">
 		<div>
-			<div
-				style="font-size: 10px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--color-accent); font-weight: 700; margin-bottom: 20px"
-			>
+			<div style="font-size: 10px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--color-accent); font-weight: 700; margin-bottom: 20px">
 				04 — Contact
 			</div>
-			<h2
-				style="color: #fff; font-size: clamp(32px, 4vw, 44px); letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 16px"
-			>
+			<h2 style="color: #fff; font-size: clamp(32px, 4vw, 44px); letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 16px">
 				Een project<br />in gedachten?
 			</h2>
 			<p style="color: rgba(255,255,255,0.5)">Neem contact op en ik kijk graag met je mee.</p>
 		</div>
 		<div style="display: flex; flex-direction: column; gap: 12px">
 			<a href="mailto:jlwbol92@gmail.com" class="contact-block">
-				<div
-					style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 5px"
-				>
-					Email
-				</div>
+				<div style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 5px">Email</div>
 				<div style="font-size: 14px; font-weight: 500">jlwbol92@gmail.com →</div>
 			</a>
 			<a href="/contact/" class="contact-block contact-block--accent">
-				<div
-					style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 5px"
-				>
-					Of direct
-				</div>
-				<div
-					style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: #fff"
-				>
-					Plan een gesprek →
-				</div>
+				<div style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 5px">Of direct</div>
+				<div style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: #fff">Plan een gesprek →</div>
 			</a>
 		</div>
 	</div>
 </section>
+
+<style>
+	/* Hero left column */
+	.hero-left {
+		padding: 60px 44px 60px 0;
+		border-right: 1px solid var(--color-border);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	/* Hero heading */
+	.hero-heading {
+		font-size: clamp(64px, 8vw, 88px);
+		letter-spacing: -4px;
+		line-height: 0.9;
+	}
+
+	/* Hero bottom split (text + buttons) */
+	.hero-bottom {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 32px;
+		padding-top: 32px;
+		border-top: 1px solid var(--color-border);
+	}
+
+	/* Hero right column */
+	.hero-right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 40px 0 40px 48px;
+	}
+
+	/* Circular photo */
+	.hero-circle {
+		position: relative;
+		width: 320px;
+		height: 320px;
+	}
+
+	/* Methoden column borders */
+	.methoden-col-1 {
+		padding-right: 44px;
+		border-right: 1px solid var(--color-border);
+	}
+	.methoden-col-2 {
+		padding: 0 44px;
+		border-right: 1px solid var(--color-border);
+	}
+	.methoden-col-3 {
+		padding-left: 44px;
+	}
+
+	/* Mobile overrides */
+	@media (max-width: 767px) {
+		.hero-heading {
+			font-size: clamp(44px, 12vw, 64px);
+			letter-spacing: -2px;
+		}
+
+		.hero-left {
+			padding: 40px 0;
+			border-right: none;
+			border-bottom: 1px solid var(--color-border);
+		}
+
+		.hero-right {
+			padding: 40px 0;
+		}
+
+		.hero-circle {
+			width: 220px;
+			height: 220px;
+		}
+
+		.hero-bottom {
+			grid-template-columns: 1fr;
+			gap: 20px;
+		}
+
+		/* Methoden: stack with bottom borders */
+		.methoden-col-1 {
+			padding-right: 0;
+			padding-bottom: 32px;
+			border-right: none;
+			border-bottom: 1px solid var(--color-border);
+		}
+		.methoden-col-2 {
+			padding: 32px 0;
+			border-right: none;
+			border-bottom: 1px solid var(--color-border);
+		}
+		.methoden-col-3 {
+			padding-left: 0;
+			padding-top: 32px;
+		}
+
+		/* About: photo first on mobile */
+		.about-photo {
+			order: -1;
+			aspect-ratio: 4/3;
+		}
+	}
+</style>
