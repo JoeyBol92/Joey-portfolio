@@ -10,6 +10,12 @@
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
 
+		if (navigation.type === 'popstate') {
+			document.documentElement.setAttribute('data-nav-direction', 'back');
+		} else {
+			document.documentElement.removeAttribute('data-nav-direction');
+		}
+
 		return new Promise((resolve) => {
 			document.startViewTransition(async () => {
 				resolve();
