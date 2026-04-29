@@ -1,44 +1,48 @@
-<script>
-	import Container from '$lib/components/Container.svelte';
-</script>
-
-<footer class="border-t-2 bg-white border-[#E0E5E6]">
-	<Container>
-		<div class="grid grid-cols-1 justify-end bg-white py-10 md:grid-cols-3">
-			<div class="left-0 top-0 col-span-2 w-[180px] bg-white">
-				<a href="/">
-					<img
-						src="/img/logo-jojobee.svg"
-						alt="logo"
-						class="w-auto px-4 pb-4"
-						width="148"
-						height="36"
-					/>
-				</a>
-				<ul class="space-y-1 px-4">
-					<li>Joey Bol</li>
-					<li>&copy; {new Date().getFullYear()}</li>
-				</ul>
-			</div>
-			<div class="px-4 max-[768px]:pt-4 md:grid md:grid-cols-2">
-				<div>
-					<h3 class="pb-2">Contact</h3>
-					<ul class="space-y-1">
-						<li>
-							<a href="mailto:jlwbol92@gmail.com" class="hover:text-[#00A9FF]">
-								jlwbol92@gmail.com
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<enhanced:img
-						src="/static/Emilio-contact.jpg"
-						alt="Contact opnemen"
-						class="h-auto w-[150px] rounded-full object-cover shadow-2xl max-[768px]:mt-4"
-					/>
-				</div>
-			</div>
+<footer style="border-top: 1px solid var(--color-border); background: var(--color-bg)">
+	<div
+		class="container"
+		style="padding-block: 48px 36px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px"
+	>
+		<div>
+			<span
+				style="font-family: var(--font-display); font-size: 12px; letter-spacing: 3.5px; text-transform: uppercase; font-weight: 700; color: var(--color-fg)"
+				>JojoBee</span
+			>
+			<p style="font-size: 13px; color: var(--color-fg-muted); margin-top: 14px; line-height: 1.7">
+				Snelle, moderne websites op maat.<br />Leiden, Nederland.
+			</p>
 		</div>
-	</Container>
+		<div>
+			<div class="eyebrow">Navigatie</div>
+			{#each [['/', 'Home'], ['/methoden/', 'Methoden'], ['/portfolio/', 'Portfolio']] as [href, label]}
+				<a
+					{href}
+					style="display: block; font-size: 14px; color: var(--color-fg-muted); padding: 3px 0"
+					>{label}</a
+				>
+			{/each}
+		</div>
+		<div>
+			<div class="eyebrow">Contact</div>
+			<a
+				href="mailto:jlwbol92@gmail.com"
+				style="font-size: 14px; color: var(--color-accent); display: block; margin-bottom: 6px"
+				>jlwbol92@gmail.com</a
+			>
+			<p style="font-size: 13px; color: var(--color-fg-muted)">Joey Bol · Leiden</p>
+			<img
+				src="/Emilio-contact.jpg"
+				alt="Emilio"
+				style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; margin-top: 14px"
+			/>
+		</div>
+	</div>
+	<div
+		style="border-top: 1px solid var(--color-border); padding: 16px 48px; display: flex; justify-content: space-between; max-width: var(--spacing-max); margin: 0 auto"
+	>
+		<span style="font-size: 12px; color: var(--color-fg-muted)"
+			>© {new Date().getFullYear()} Joey Bol — JojoBee</span
+		>
+		<span style="font-size: 12px; color: var(--color-fg-muted)">Gemaakt met SvelteKit</span>
+	</div>
 </footer>

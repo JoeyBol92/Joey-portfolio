@@ -1,17 +1,16 @@
 <script>
 	import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
-	import Container from '$lib/components/Container.svelte';
 
 	/** @type {{data: any}} */
 	let { data } = $props();
 </script>
 
 <svelte:head>
-	<title>{data.portfolio.fields.seoTitel} &copy;</title>
+	<title>{data.portfolio.fields.seoTitel} ©</title>
 	<meta name="description" content={data.portfolio.fields.seoMetabeschrijving} />
 	<link rel="canonical" href="https://jojobee.nl/portfolio/{data.portfolio.fields.slug}/" />
 	<meta name="robots" content="noindex" />
-	<meta property="og:title" content="{data.portfolio.fields.seoTitel} &copy;" />
+	<meta property="og:title" content="{data.portfolio.fields.seoTitel} ©" />
 	<meta property="og:url" content="https://jojobee.nl/portfolio/{data.portfolio.fields.slug}/" />
 	<meta
 		property="og:image"
@@ -24,9 +23,8 @@
 	<meta property="og:type" content="WebPage" />
 	<meta property="og:description" content={data.portfolio.fields.seoMetabeschrijving} />
 	<meta property="og:locale" content="nl" />
-
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="{data.portfolio.fields.seoTitel} &copy;" />
+	<meta name="twitter:title" content="{data.portfolio.fields.seoTitel} ©" />
 	<meta name="twitter:url" content="https://jojobee.nl/portfolio/{data.portfolio.fields.slug}/" />
 	<meta name="twitter:description" content={data.portfolio.fields.seoMetabeschrijving} />
 	<meta
@@ -39,199 +37,192 @@
 	/>
 </svelte:head>
 
-<section class="container mx-auto mb-12 max-w-7xl pt-20 sm:px-8 md:px-6 md:pt-32">
-	<div class="px-[25px]">
-		<a href="/portfolio/" class="link-arrow mb-8 inline-flex gap-2 text-sm">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="16"
-				height="16"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				<path d="m15 18-6-6 6-6"></path>
-			</svg>
-			Terug naar portfolio
-		</a>
-		<h1 class="mb-8 text-center text-3xl md:text-5xl">
-			{@html data.portfolio.fields.title_portfolio}
-		</h1>
-		<img
-			src={data.portfolio.fields.featuredImagePortfolio.fields.file.url}
-			alt={data.portfolio.fields.featuredImagePortfolio.fields.description ||
-				data.portfolio.fields.featuredImagePortfolio.fields.title}
-			class="h-96 w-full rounded-lg object-cover object-top shadow-xl"
-		/>
-	</div>
-</section>
-
-<div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
-	<div class="grid gap-8 px-[25px] md:grid-cols-3">
-		<div class="card">
-			<div class="flex items-center p-6">
-				<div class="icon-wrapper">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="text-white"
-					>
-						<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-						<circle cx="12" cy="7" r="4"></circle>
-					</svg>
-				</div>
-				<div>
-					<h2 class="font-semibold text-gray-600">Klant</h2>
-					<p class="text-lg">{@html data.portfolio.fields.client}</p>
-				</div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="flex items-center p-6">
-				<div class="icon-wrapper">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="text-white"
-					>
-						<path d="M8 2v4"></path>
-						<path d="M16 2v4"></path>
-						<rect width="18" height="18" x="3" y="4" rx="2"></rect>
-						<path d="M3 10h18"></path>
-					</svg>
-				</div>
-				<div>
-					<h2 class="font-semibold text-gray-600">Datum</h2>
-					<p class="text-lg">{@html data.portfolio.fields.date}</p>
-				</div>
-			</div>
-		</div>
-		<div class="card">
-			<div class="flex items-center p-6">
-				<div class="icon-wrapper">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="text-white"
-					>
-						<polyline points="16 18 22 12 16 6"></polyline>
-						<polyline points="8 6 2 12 8 18"></polyline>
-					</svg>
-				</div>
-				<div>
-					<h2 class="font-semibold text-gray-600">Categorie</h2>
-					<p class="text-lg">{@html data.portfolio.fields.categorie}</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
-	<div class="px-[25px]">
-		<div class="card p-6">
-			<h2 class="mb-4 text-2xl font-bold">Projectomschrijving</h2>
-			<div
-				class="prose-p:mb-5 prose-p:text-gray-600 prose-ul:list-disc prose-ul:space-y-2 prose-ul:pl-5"
-			>
-				{@html documentToHtmlString(data.portfolio.fields.projectBeschrijving)}
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
-	<div class="px-[25px]">
-		<div class="mb-12 grid gap-8 md:grid-cols-2">
-			<div class="card">
-				<div class="p-6">
-					<h2 class="mb-4 text-2xl font-bold">Eigenschappen</h2>
-					<ul class="list-disc space-y-2 pl-5">
-						{#each data.portfolio.fields.projectOverview as eigenschap}
-							<li class="text-gray-600">{@html eigenschap}</li>
-						{/each}
-					</ul>
-				</div>
-			</div>
-			<div class="card">
-				<div class="p-6">
-					<h2 class="mb-4 text-2xl font-bold">Technieken</h2>
-					<div class="flex flex-wrap gap-2">
-						{#each data.portfolio.fields.technieken as techniek}
-							<span class="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-800">
-								{@html techniek}
-							</span>
-						{/each}
+<!-- Hero header -->
+<section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
+	<div class="container">
+		<a href="/portfolio/" class="link-arrow" style="margin-bottom: 32px; display: inline-flex"
+			>← Terug naar portfolio</a
+		>
+		<div
+			style="display: grid; grid-template-columns: 7fr 5fr; gap: 64px; align-items: start; margin-top: 32px"
+		>
+			<div>
+				<div class="eyebrow">{@html data.portfolio.fields.categorie}</div>
+				<h1 style="margin-bottom: 24px">{@html data.portfolio.fields.title_portfolio}</h1>
+				<div
+					style="display: flex; gap: 36px; padding-top: 24px; border-top: 1px solid var(--color-border)"
+				>
+					<div>
+						<div
+							style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-fg-muted); font-weight: 700; margin-bottom: 6px"
+						>
+							Klant
+						</div>
+						<div style="font-size: 15px; color: var(--color-fg); font-weight: 600">
+							{@html data.portfolio.fields.client}
+						</div>
+					</div>
+					<div>
+						<div
+							style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-fg-muted); font-weight: 700; margin-bottom: 6px"
+						>
+							Datum
+						</div>
+						<div style="font-size: 15px; color: var(--color-fg); font-weight: 600">
+							{@html data.portfolio.fields.date}
+						</div>
 					</div>
 				</div>
 			</div>
+			<div style="display: flex; flex-direction: column; gap: 16px; padding-top: 8px">
+				<div>
+					<div
+						style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-fg-muted); font-weight: 700; margin-bottom: 10px"
+					>
+						Technieken
+					</div>
+					<div style="display: flex; flex-wrap: wrap; gap: 8px">
+						{#each data.portfolio.fields.technieken as techniek}
+							<span class="tag">{@html techniek}</span>
+						{/each}
+					</div>
+				</div>
+				<a
+					href={data.portfolio.fields.websiteKlant}
+					target="_blank"
+					rel="nofollow"
+					class="btn btn-primary"
+					style="margin-top: 8px; align-self: flex-start"
+				>
+					Bekijk live website →
+				</a>
+			</div>
 		</div>
 	</div>
+</section>
+
+<!-- Featured image -->
+<div style="border-bottom: 1px solid var(--color-border)">
+	<img
+		src={data.portfolio.fields.featuredImagePortfolio.fields.file.url}
+		alt={data.portfolio.fields.featuredImagePortfolio.fields.description ||
+			data.portfolio.fields.featuredImagePortfolio.fields.title}
+		style="width: 100%; max-height: 520px; object-fit: cover; object-position: top"
+	/>
 </div>
 
-{#if data.portfolio.fields.media}
-	<div class="container mx-auto mb-12 max-w-7xl sm:px-8 md:px-6">
-		<div class="px-[25px]">
-			<div class="mb-12 grid gap-8 md:grid-cols-2">
-				{#each data.portfolio.fields.media as media}
-					<img
-						src={media.fields.file.url}
-						alt={media.fields.description || media.fields.title}
-						class="h-96 w-full rounded-lg object-cover object-top shadow-md"
-					/>
+<!-- Projectomschrijving + Eigenschappen -->
+<section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
+	<div class="container" style="display: grid; grid-template-columns: 7fr 5fr; gap: 80px">
+		<div>
+			<div class="rule-header">
+				<span class="rule-header__label">Projectomschrijving</span>
+				<div class="rule-header__line"></div>
+			</div>
+			<div style="line-height: 1.8; color: var(--color-fg-muted); font-size: 15px">
+				{@html documentToHtmlString(data.portfolio.fields.projectBeschrijving)}
+			</div>
+		</div>
+		<div>
+			<div class="rule-header">
+				<span class="rule-header__label">Eigenschappen</span>
+				<div class="rule-header__line"></div>
+			</div>
+			<div style="display: flex; flex-direction: column; gap: 12px">
+				{#each data.portfolio.fields.projectOverview as eigenschap}
+					<div class="check-item">
+						<div class="check-item__dot">
+							<svg
+								width="12"
+								height="12"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="white"
+								stroke-width="3"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="M20 6 9 17l-5-5" />
+							</svg>
+						</div>
+						<span>{@html eigenschap}</span>
+					</div>
 				{/each}
 			</div>
 		</div>
 	</div>
+</section>
+
+<!-- Media gallery -->
+{#if data.portfolio.fields.media}
+	<section
+		style="padding: 60px 0; border-bottom: 1px solid var(--color-border); background: var(--color-bg-sub)"
+	>
+		<div class="container">
+			<div class="rule-header">
+				<span class="rule-header__label">Afbeeldingen</span>
+				<div class="rule-header__line"></div>
+			</div>
+			<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px">
+				{#each data.portfolio.fields.media as media}
+					<img
+						src={media.fields.file.url}
+						alt={media.fields.description || media.fields.title}
+						style="width: 100%; border-radius: var(--radius-card); aspect-ratio: 16/9; object-fit: cover; object-position: top"
+					/>
+				{/each}
+			</div>
+		</div>
+	</section>
 {/if}
 
-<div class="container mx-auto mb-12 max-w-7xl px-6 sm:px-8">
-	<div class="px-[25px]">
-		<div class="flex justify-center gap-4 md:flex-row">
-			<a href={data.portfolio.fields.websiteKlant} target="_blank" rel="nofollow">
-				<button class="btn-primary">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<circle cx="12" cy="12" r="10"></circle>
-						<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-						<path d="M2 12h20"></path>
-					</svg>
-					<span class="ml-2">Bekijk {@html data.portfolio.fields.websiteKlant}</span>
-				</button>
+<!-- CTA -->
+<section class="contact-band">
+	<div
+		class="container"
+		style="padding-block: 68px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center"
+	>
+		<div>
+			<div
+				style="font-size: 10px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--color-accent); font-weight: 700; margin-bottom: 20px"
+			>
+				Live resultaat
+			</div>
+			<h2
+				style="color: #fff; font-size: clamp(32px, 4vw, 44px); letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 16px"
+			>
+				Bekijk het<br />eindresultaat
+			</h2>
+			<p style="color: rgba(255,255,255,0.5)">
+				Neem een kijkje op de live website van dit project.
+			</p>
+		</div>
+		<div style="display: flex; flex-direction: column; gap: 12px">
+			<a
+				href={data.portfolio.fields.websiteKlant}
+				target="_blank"
+				rel="nofollow"
+				class="contact-block contact-block--accent"
+			>
+				<div
+					style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 5px"
+				>
+					Website
+				</div>
+				<div
+					style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: #fff"
+				>
+					Bezoek {@html data.portfolio.fields.websiteKlant} →
+				</div>
+			</a>
+			<a href="/portfolio/" class="contact-block">
+				<div
+					style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 5px"
+				>
+					Meer projecten
+				</div>
+				<div style="font-size: 14px; font-weight: 500">Terug naar portfolio →</div>
 			</a>
 		</div>
 	</div>
-</div>
+</section>

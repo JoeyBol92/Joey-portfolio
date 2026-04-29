@@ -1,377 +1,342 @@
-<script>
-	import Container from '$lib/components/Container.svelte';
-</script>
-
 <svelte:head>
 	<link rel="canonical" href="https://jojobee.nl" />
-	<meta name="description" content="Ik maak website op maat voor jou en supersnel" />
+	<meta
+		name="description"
+		content="Hoi, ik ben Joey — enthousiaste webdeveloper uit Leiden. Van WordPress tot headless SvelteKit: ik bouw wat werkt."
+	/>
 	<meta name="robots" content="noindex" />
-	<meta property="og:title" content="JojoBee: websites op maat &copy; {new Date().getFullYear()}" />
+	<meta property="og:title" content="JojoBee: websites op maat © {new Date().getFullYear()}" />
 	<meta property="og:url" content="https://jojobee.nl" />
 	<meta property="og:image" content="https://jojobee.nl/img/logo-jojobee.svg" />
 	<meta property="og:image:alt" content="Logo JojoBee" />
 	<meta property="og:type" content="WebPage" />
-	<meta property="og:description" content="Ik maak website op maat voor jou en supersnel" />
-	<meta property="og:locale" content="nl" />
-
-	<meta name="twitter:card" content="summary_large_image" />
 	<meta
-		name="twitter:title"
-		content="JojoBee: websites op maat &copy; {new Date().getFullYear()}"
+		property="og:description"
+		content="Hoi, ik ben Joey — enthousiaste webdeveloper uit Leiden. Van WordPress tot headless SvelteKit: ik bouw wat werkt."
 	/>
+	<meta property="og:locale" content="nl" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="JojoBee: websites op maat © {new Date().getFullYear()}" />
 	<meta name="twitter:url" content="https://jojobee.nl" />
-	<meta name="twitter:description" content="Ik maak website op maat voor jou en supersnel" />
+	<meta
+		name="twitter:description"
+		content="Hoi, ik ben Joey — enthousiaste webdeveloper uit Leiden. Van WordPress tot headless SvelteKit: ik bouw wat werkt."
+	/>
 	<meta name="twitter:image" content="https://jojobee.nl/img/logo-jojobee.svg" />
 	<meta name="twitter:image:alt" content="Logo JojoBee" />
 </svelte:head>
 
-<!-- Hero Section -->
-<section class="py-20 md:py-32">
-	<Container>
-		<div class="grid grid-cols-2 items-center gap-12 max-[768px]:grid-cols-1 lg:gap-20">
-			<div class="px-6.25">
-				<h1 class="mb-4 text-3xl md:text-5xl">Welcome bij JojoBee!</h1>
+<!-- Hero -->
+<section style="border-bottom: 1px solid var(--color-border)">
+	<div class="container" style="display: grid; grid-template-columns: 7fr 5fr; min-height: 500px">
+		<!-- Left: big display type -->
+		<div
+			style="padding: 60px 44px 60px 0; border-right: 1px solid var(--color-border); display: flex; flex-direction: column; justify-content: space-between"
+		>
+			<h1
+				class="fade-up"
+				style="font-size: clamp(64px, 8vw, 88px); letter-spacing: -4px; line-height: 0.9"
+			>
+				Welkom bij<br />
+				<span style="-webkit-text-stroke: 3px var(--color-accent); color: transparent">JojoBee</span>
+			</h1>
+			<div
+				class="fade-up fade-up-d2"
+				style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding-top: 32px; border-top: 1px solid var(--color-border); margin-top: 32px"
+			>
 				<p>
-					Hoi ik ben Joey, een rasechte, positief ingestelde en enthousiaste Leidenaar met een
-					passie voor online webdevelopment. Sta altijd klaar voor mijn collega's (behalve op 3
-					oktober). Leergierig en loopt niet weg voor een uitdaging. Is zelf pas tevreden als andere
-					mensen dat ook zijn.
+					Hoi, ik ben Joey — enthousiaste webdeveloper uit Leiden. Van WordPress tot headless
+					SvelteKit: ik bouw wat werkt.
 				</p>
-				<div class="item-center pb-8">
-					<div>
-						<a href="/portfolio/" aria-label="Link naar portfolio">
-							<button class="btn-primary mt-4" aria-label="My work">
-								<span>Bekijk mijn werk</span>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									class="lucide lucide-chevron-right ml-2 h-5 w-5"
-								>
-									<path d="m9 18 6-6-6-6"></path>
-								</svg>
-							</button>
-						</a>
-					</div>
+				<div style="display: flex; flex-direction: column; gap: 10px">
+					<a href="/portfolio/" class="btn btn-primary">Bekijk mijn werk →</a>
+					<a href="/methoden/" class="btn btn-secondary">Mijn methoden</a>
 				</div>
 			</div>
+		</div>
 
-			<!-- Decorative Hero Image -->
-			<div class="animate-fade-up stagger-2 relative opacity-0">
-				<div class="relative mx-auto aspect-square max-w-md">
-					<!-- Decorative rings -->
-					<div
-						class="animate-float border-primary-200 absolute inset-0 rounded-full border-2 border-dashed"
-					></div>
-					<div
-						class="border-primary-100 absolute inset-4 rounded-full border-2 border-dashed"
-					></div>
-
-					<!-- Image -->
-					<div
-						class="from-primary-500 to-primary-400 shadow-primary-500/25 absolute inset-8 overflow-hidden rounded-full bg-gradient-to-br p-1 shadow-2xl"
-					>
+		<!-- Right: circular hero -->
+		<div
+			style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 0 40px 48px"
+		>
+			<div class="fade-up fade-up-d2" style="position: relative; width: 320px; height: 320px">
+				<div
+					class="animate-float"
+					style="position: absolute; inset: 0; border-radius: 50%; border: 2px dashed var(--color-accent); opacity: 0.3"
+				></div>
+				<div
+					style="position: absolute; inset: 18px; border-radius: 50%; border: 2px dashed var(--color-accent-border); opacity: 0.5"
+				></div>
+				<div
+					style="position: absolute; inset: 32px; border-radius: 50%; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-border)); padding: 4px; box-shadow: var(--shadow-accent)"
+				>
+					<div style="border-radius: 50%; overflow: hidden; width: 100%; height: 100%">
 						<enhanced:img
 							src="/static/Joey-and-Emilio.jpg"
-							class="h-full w-full rounded-full object-cover object-top"
-							alt="Joey en zijn hond Emilio"
+							alt="Joey en Emilio"
+							style="width: 100%; height: 100%; object-fit: cover; object-position: center top"
 						/>
 					</div>
-
-					<!-- Floating badges -->
-					<div
-						class="absolute top-1/4 -right-4 rounded-xl bg-white p-3 shadow-xl shadow-slate-200/50"
-					>
-						<img src="/img/svelte-logo.svg" alt="Svelte" class="h-8 w-8" />
-					</div>
-					<div
-						class="absolute bottom-1/4 -left-4 rounded-xl bg-white p-3 shadow-xl shadow-slate-200/50"
-					>
-						<img src="/img/wordpress-logo.svg" alt="WordPress" class="h-8 w-8" />
-					</div>
+				</div>
+				<div
+					class="fade-up fade-up-d4"
+					style="position: absolute; top: 22%; right: -18px; background: #fff; border-radius: 12px; padding: 8px 10px; box-shadow: 0 6px 20px rgba(0,169,255,0.15)"
+				>
+					<img src="/img/wordpress-logo.svg" alt="WordPress" style="width: 28px; height: 28px" />
+				</div>
+				<div
+					class="fade-up fade-up-d5"
+					style="position: absolute; bottom: 22%; left: -18px; background: #fff; border-radius: 12px; padding: 8px 10px; box-shadow: 0 6px 20px rgba(255,68,0,0.1)"
+				>
+					<img src="/img/svelte-logo.svg" alt="SvelteKit" style="width: 28px; height: 28px" />
 				</div>
 			</div>
+			<div style="display: flex; gap: 8px; margin-top: 18px">
+				<span class="tag tag-accent">WordPress</span>
+				<span class="tag">SvelteKit</span>
+				<span class="tag">Headless</span>
+			</div>
 		</div>
-	</Container>
+	</div>
 </section>
 
-<!-- Overview services -->
-<section class="py-10">
-	<Container>
-		<div>
-			<h2 class="section-title">Mijn methoden</h2>
+<!-- Methoden -->
+<section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
+	<div class="container">
+		<div class="rule-header">
+			<span class="rule-header__label">01 — Methoden</span>
+			<div class="rule-header__line"></div>
+			<a href="/methoden/" class="rule-header__aside">Alles bekijken →</a>
 		</div>
-		<div class="grid gap-8 py-10 md:grid-cols-3">
-			<div class="card card-accent card-hover h-full">
-				<div class="flex flex-col items-center p-6">
-					<div class="mb-4 flex items-center">
-						<h3 class="mr-2 text-xl font-semibold">WordPress</h3>
-						<img
-							src="/img/wordpress-logo.svg"
-							alt="logo-wordpress"
-							class="w-[50px]"
-							width="50"
-							height="50"
-						/>
-					</div>
-					<p class="mb-4 text-gray-600">
-						De manier om snel en budgetvriendelijke een website op te zetten is WordPress. Met
-						weinig budget kan je met succes een mooie website bouwen.
-					</p>
-					<a href="/methoden/wordpress/">
-						<button class="btn-secondary w-full text-sm">
-							<span>Lees meer over een WordPress site</span>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="ml-2 h-5 w-5"
-							>
-								<path d="m9 18 6-6-6-6"></path>
-							</svg>
-						</button>
-					</a>
-				</div>
+		<div style="display: grid; grid-template-columns: repeat(3, 1fr)">
+			<div style="padding-right: 44px; border-right: 1px solid var(--color-border)">
+				<div class="eyebrow">01</div>
+				<h3>WordPress</h3>
+				<p style="margin-top: 10px">Snel en budgetvriendelijk een mooie website opzetten.</p>
+				<a
+					href="/methoden/wordpress/"
+					class="link-arrow"
+					style="margin-top: 16px; display: inline-flex">Lees meer →</a
+				>
 			</div>
-			<div class="card card-accent card-hover h-full">
-				<div class="flex flex-col items-center p-6">
-					<div class="mb-4 flex items-center">
-						<h3 class="mr-2 text-xl font-semibold">Static website</h3>
-						<img
-							src="/img/svelte-logo.svg"
-							alt="logo-svelte"
-							class="w-[50px]"
-							width="50"
-							height="50"
-						/>
-					</div>
-
-					<p class="mb-4 text-gray-600">
-						Een statische website is een website zonder CMS (content management systeem) zoals
-						WordPress bijvoorbeeld. Ideaal voor websites zonder onderhoud.
-					</p>
-					<a href="/methoden/statische-website/">
-						<button class="btn-secondary w-full text-sm">
-							<span>Lees meer over een statische website</span>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="lucide lucide-chevron-right ml-2 h-5 w-5"
-							>
-								<path d="m9 18 6-6-6-6"></path>
-							</svg>
-						</button>
-					</a>
-				</div>
+			<div style="padding: 0 44px; border-right: 1px solid var(--color-border)">
+				<div class="eyebrow">02</div>
+				<h3>Static website</h3>
+				<p style="margin-top: 10px">
+					Geen CMS, maximale snelheid. SvelteKit voor optimale performance.
+				</p>
+				<a
+					href="/methoden/statische-website/"
+					class="link-arrow"
+					style="margin-top: 16px; display: inline-flex">Lees meer →</a
+				>
 			</div>
-			<div class="card card-accent card-hover h-full">
-				<div class="flex flex-col items-center p-6">
-					<div class="mb-4 flex items-center">
-						<h3 class="mr-2 text-xl font-semibold">Headless CMS</h3>
-						<img
-							src="/img/wordpress-logo.svg"
-							alt="logo-wordpress"
-							class="w-[50px]"
-							width="50"
-							height="50"
-						/>
-						<img
-							src="/img/svelte-logo.svg"
-							alt="logo-svelte"
-							class="ml-2 w-[50px]"
-							width="50"
-							height="50"
-						/>
-					</div>
-					<p class="mb-4 text-gray-600">
-						Headless betekent dat de front-end en de back-end van elkaar losgekoppeld zijn. Ideaal
-						voor websites met veel bezoek en waar dagelijks veel werk in wordt verricht.
-					</p>
-					<a href="/methoden/headless/">
-						<button class="btn-secondary w-full text-sm">
-							<span>Lees meer over een Headless CMS</span>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="lucide lucide-chevron-right ml-2 h-5 w-5"
-							>
-								<path d="m9 18 6-6-6-6"></path>
-							</svg>
-						</button>
-					</a>
-				</div>
+			<div style="padding-left: 44px">
+				<div class="eyebrow">03</div>
+				<h3>Headless CMS</h3>
+				<p style="margin-top: 10px">
+					Front-end en back-end losgekoppeld. Ideaal voor high-traffic sites.
+				</p>
+				<a
+					href="/methoden/headless/"
+					class="link-arrow"
+					style="margin-top: 16px; display: inline-flex">Lees meer →</a
+				>
 			</div>
 		</div>
-	</Container>
+	</div>
 </section>
 
-<!-- Portfolio Section -->
-<section class="bg-gray-50 px-[25px] py-20">
-	<Container>
+<!-- Portfolio preview -->
+<section
+	style="padding: 60px 0; border-bottom: 1px solid var(--color-border); background: var(--color-bg-sub)"
+>
+	<div class="container">
+		<div class="rule-header">
+			<span class="rule-header__label">02 — Bijdragen</span>
+			<div class="rule-header__line"></div>
+			<a href="/portfolio/" class="rule-header__aside">Alles bekijken →</a>
+		</div>
+		<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px">
+			<a href="/portfolio/dend/" class="portfolio-card">
+				<div class="portfolio-card-image">
+					<enhanced:img
+						src="/static/img/portfolio/logo.png"
+						alt="DitjesenDatjes logo"
+						style="max-height: 50px; max-width: 180px; object-fit: contain"
+					/>
+					<div class="portfolio-card-overlay">
+						<span style="color: #fff; font-weight: 700; font-size: 14px">Bekijk project →</span>
+					</div>
+				</div>
+				<div
+					style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center"
+				>
+					<div>
+						<div class="portfolio-tag">WordPress</div>
+						<div
+							style="font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-top: 2px"
+						>
+							DitjesenDatjes
+						</div>
+					</div>
+					<span style="font-size: 17px; color: var(--color-accent)">→</span>
+				</div>
+			</a>
+			<a href="/portfolio/bukett/" class="portfolio-card">
+				<div class="portfolio-card-image">
+					<enhanced:img
+						src="/static/img/portfolio/Bukett_Woordmerk_RGB_Zwart_144dpi.png"
+						alt="Bukett logo"
+						style="max-height: 50px; max-width: 180px; object-fit: contain"
+					/>
+					<div class="portfolio-card-overlay">
+						<span style="color: #fff; font-weight: 700; font-size: 14px">Bekijk project →</span>
+					</div>
+				</div>
+				<div
+					style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center"
+				>
+					<div>
+						<div class="portfolio-tag">WordPress</div>
+						<div
+							style="font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-top: 2px"
+						>
+							Bukett
+						</div>
+					</div>
+					<span style="font-size: 17px; color: var(--color-accent)">→</span>
+				</div>
+			</a>
+			<a href="/portfolio/ams-advocaten/" class="portfolio-card">
+				<div class="portfolio-card-image">
+					<enhanced:img
+						src="/static/img/portfolio/logo-ams-advocaten.png"
+						alt="AMS Advocaten logo"
+						style="max-height: 50px; max-width: 180px; object-fit: contain"
+					/>
+					<div class="portfolio-card-overlay">
+						<span style="color: #fff; font-weight: 700; font-size: 14px">Bekijk project →</span>
+					</div>
+				</div>
+				<div
+					style="padding: 14px 18px; display: flex; justify-content: space-between; align-items: center"
+				>
+					<div>
+						<div class="portfolio-tag">WordPress</div>
+						<div
+							style="font-family: var(--font-display); font-size: 15px; font-weight: 700; margin-top: 2px"
+						>
+							AMS Advocaten
+						</div>
+					</div>
+					<span style="font-size: 17px; color: var(--color-accent)">→</span>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- Over mij -->
+<section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
+	<div
+		class="container"
+		style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center"
+	>
 		<div>
-			<h2 class="section-title">Mijn bijdragen</h2>
-		</div>
-		<div class="grid gap-8 py-10 md:grid-cols-3">
-			<!-- DitjesenDatjes -->
-			<a href="/portfolio/dend/" class="portfolio-card group">
-				<div class="portfolio-card-image">
-					<div class="absolute inset-0 flex items-center justify-center p-8">
-						<enhanced:img
-							src="/static/img/portfolio/logo.png"
-							alt="DitjesenDatjes logo"
-							class="max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
-						/>
-					</div>
-					<div class="portfolio-card-overlay">
-						<span class="flex items-center gap-2 font-medium text-white">
-							Bekijk project
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="20"
-								height="20"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path d="m9 18 6-6-6-6"></path>
-							</svg>
-						</span>
-					</div>
-				</div>
-				<div class="p-6 text-center">
-					<h3 class="mb-2 text-xl font-semibold">DitjesenDatjes</h3>
-					<p class="text-gray-600">
-						In opdracht van Trusted Media heb ik in dienst van Performance Department samen met mijn
-						collega Hessel Middendorp een nieuwe opzet gerealiseerd.
-					</p>
-				</div>
-			</a>
-
-			<!-- Bukett -->
-			<a href="/portfolio/bukett/" class="portfolio-card group">
-				<div class="portfolio-card-image">
-					<div class="absolute inset-0 flex items-center justify-center p-8">
-						<enhanced:img
-							src="/static/img/portfolio/Bukett_Woordmerk_RGB_Zwart_144dpi.png"
-							alt="Bukett logo"
-							class="max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
-						/>
-					</div>
-					<div class="portfolio-card-overlay">
-						<span class="flex items-center gap-2 font-medium text-white">
-							Bekijk project
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="20"
-								height="20"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path d="m9 18 6-6-6-6"></path>
-							</svg>
-						</span>
-					</div>
-				</div>
-				<div class="p-6 text-center">
-					<h3 class="mb-2 text-xl font-semibold">Bukett</h3>
-					<p class="text-gray-600">
-						In opdracht van Doxflow B.V. heb ik in dienst van Performance Department de website
-						https://www.bukett.nl gebouwd.
-					</p>
-				</div>
-			</a>
-
-			<!-- AMS Advocaten -->
-			<a href="/portfolio/ams-advocaten/" class="portfolio-card group">
-				<div class="portfolio-card-image">
-					<div class="absolute inset-0 flex items-center justify-center p-8">
-						<enhanced:img
-							src="/static/img/portfolio/logo-ams-advocaten.png"
-							alt="AMS Advocaten logo"
-							class="max-h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
-						/>
-					</div>
-					<div class="portfolio-card-overlay">
-						<span class="flex items-center gap-2 font-medium text-white">
-							Bekijk project
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="20"
-								height="20"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path d="m9 18 6-6-6-6"></path>
-							</svg>
-						</span>
-					</div>
-				</div>
-				<div class="p-6 text-center">
-					<h3 class="mb-2 text-xl font-semibold">AMS Advocaten</h3>
-					<p class="text-gray-600">
-						In opdracht van AMS Advocaten heb ik in dienst van Performance Department samen met mijn
-						collega Hessel Middendorp een nieuwe opzet gerealiseerd.
-					</p>
-				</div>
-			</a>
-		</div>
-		<div class="flex justify-center">
-			<a href="/portfolio/" aria-label="button link naar portfolio">
-				<button class="btn-primary mt-4" aria-label="Contact me">
-					<span>Bekijk alle bijdragen</span>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="lucide lucide-chevron-right ml-2 h-5 w-5"
+			<div class="rule-header" style="margin-bottom: 28px">
+				<span class="rule-header__label">03 — Over mij</span>
+			</div>
+			<h2
+				style="font-size: clamp(32px, 4vw, 46px); letter-spacing: -1.5px; line-height: 1.02; margin-bottom: 20px"
+			>
+				Ik ben Joey,<br />uit Leiden.
+			</h2>
+			<p style="margin-bottom: 28px">
+				Rasechte Leidenaar, positief ingesteld en altijd enthousiast. Leergierig en pas tevreden als
+				anderen dat ook zijn.
+			</p>
+			<div
+				style="display: flex; gap: 36px; padding-top: 24px; border-top: 1px solid var(--color-border)"
+			>
+				<div>
+					<div
+						style="font-family: var(--font-display); font-size: 36px; font-weight: 800; color: var(--color-fg); line-height: 1"
 					>
-						<path d="m9 18 6-6-6-6"></path>
-					</svg>
-				</button>
+						3+
+					</div>
+					<div
+						style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted); margin-top: 6px"
+					>
+						Jaar ervaring
+					</div>
+				</div>
+				<div>
+					<div
+						style="font-family: var(--font-display); font-size: 36px; font-weight: 800; color: var(--color-fg); line-height: 1"
+					>
+						10+
+					</div>
+					<div
+						style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted); margin-top: 6px"
+					>
+						Projecten
+					</div>
+				</div>
+			</div>
+		</div>
+		<div
+			style="border-radius: 14px; overflow: hidden; aspect-ratio: 3/4; border: 1px solid var(--color-border)"
+		>
+			<enhanced:img
+				src="/static/img/Joey-standing.jpg"
+				alt="Joey Bol"
+				style="width: 100%; height: 100%; object-fit: cover; object-position: center top"
+			/>
+		</div>
+	</div>
+</section>
+
+<!-- Contact CTA -->
+<section class="contact-band">
+	<div
+		class="container"
+		style="padding-block: 68px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center"
+	>
+		<div>
+			<div
+				style="font-size: 10px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--color-accent); font-weight: 700; margin-bottom: 20px"
+			>
+				04 — Contact
+			</div>
+			<h2
+				style="color: #fff; font-size: clamp(32px, 4vw, 44px); letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 16px"
+			>
+				Een project<br />in gedachten?
+			</h2>
+			<p style="color: rgba(255,255,255,0.5)">Neem contact op en ik kijk graag met je mee.</p>
+		</div>
+		<div style="display: flex; flex-direction: column; gap: 12px">
+			<a href="mailto:jlwbol92@gmail.com" class="contact-block">
+				<div
+					style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 5px"
+				>
+					Email
+				</div>
+				<div style="font-size: 14px; font-weight: 500">jlwbol92@gmail.com →</div>
+			</a>
+			<a href="/contact/" class="contact-block contact-block--accent">
+				<div
+					style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 5px"
+				>
+					Of direct
+				</div>
+				<div
+					style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: #fff"
+				>
+					Plan een gesprek →
+				</div>
 			</a>
 		</div>
-	</Container>
+	</div>
 </section>
