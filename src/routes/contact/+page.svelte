@@ -70,70 +70,51 @@
 
 				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px">
 					<div style="display: flex; flex-direction: column; gap: 8px">
-						<label
-							style="font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted)"
-							for="naam">Naam</label
-						>
+						<label class="field-label" for="naam">Naam</label>
 						<input
 							id="naam"
+							class="field-input"
 							type="text"
 							name="naam"
 							required
 							placeholder="Jan de Vries"
-							style="padding: 12px 16px; border: 1.5px solid var(--color-border); border-radius: var(--radius-btn); font-family: var(--font-body); font-size: 15px; background: var(--color-bg); color: var(--color-fg); outline: none; transition: border-color 0.15s"
-							onfocus="this.style.borderColor='var(--color-accent)'"
-							onblur="this.style.borderColor='var(--color-border)'"
 						/>
 					</div>
 					<div style="display: flex; flex-direction: column; gap: 8px">
-						<label
-							style="font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted)"
-							for="email">E-mail</label
-						>
+						<label class="field-label" for="email">E-mail</label>
 						<input
 							id="email"
+							class="field-input"
 							type="email"
 							name="email"
 							required
 							placeholder="jan@bedrijf.nl"
-							style="padding: 12px 16px; border: 1.5px solid var(--color-border); border-radius: var(--radius-btn); font-family: var(--font-body); font-size: 15px; background: var(--color-bg); color: var(--color-fg); outline: none; transition: border-color 0.15s"
-							onfocus="this.style.borderColor='var(--color-accent)'"
-							onblur="this.style.borderColor='var(--color-border)'"
 						/>
 					</div>
 				</div>
 
 				<div style="display: flex; flex-direction: column; gap: 8px">
-					<label
-						style="font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted)"
-						for="onderwerp">Onderwerp</label
-					>
+					<label class="field-label" for="onderwerp">Onderwerp</label>
 					<input
 						id="onderwerp"
+						class="field-input"
 						type="text"
 						name="onderwerp"
 						required
 						placeholder="Nieuwe website voor mijn bedrijf"
-						style="padding: 12px 16px; border: 1.5px solid var(--color-border); border-radius: var(--radius-btn); font-family: var(--font-body); font-size: 15px; background: var(--color-bg); color: var(--color-fg); outline: none; transition: border-color 0.15s"
-						onfocus="this.style.borderColor='var(--color-accent)'"
-						onblur="this.style.borderColor='var(--color-border)'"
 					/>
 				</div>
 
 				<div style="display: flex; flex-direction: column; gap: 8px">
-					<label
-						style="font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--color-fg-muted)"
-						for="bericht">Bericht</label
-					>
+					<label class="field-label" for="bericht">Bericht</label>
 					<textarea
 						id="bericht"
+						class="field-input"
 						name="bericht"
 						required
 						rows="6"
 						placeholder="Vertel me meer over je project..."
-						style="padding: 12px 16px; border: 1.5px solid var(--color-border); border-radius: var(--radius-btn); font-family: var(--font-body); font-size: 15px; background: var(--color-bg); color: var(--color-fg); outline: none; transition: border-color 0.15s; resize: vertical"
-						onfocus="this.style.borderColor='var(--color-accent)'"
-						onblur="this.style.borderColor='var(--color-border)'"
+						style="resize: vertical"
 					></textarea>
 				</div>
 
@@ -168,3 +149,30 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.field-label {
+		font-size: 11px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: var(--color-fg-muted);
+	}
+
+	.field-input {
+		padding: 12px 16px;
+		border: 1.5px solid var(--color-border);
+		border-radius: var(--radius-btn);
+		font-family: var(--font-body);
+		font-size: 15px;
+		background: var(--color-bg);
+		color: var(--color-fg);
+		outline: none;
+		transition: border-color 0.15s;
+		width: 100%;
+	}
+
+	.field-input:focus {
+		border-color: var(--color-accent);
+	}
+</style>

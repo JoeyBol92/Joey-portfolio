@@ -74,7 +74,18 @@
 					</div>
 				</div>
 			</div>
-			<div style="display: flex; flex-direction: column; gap: 16px; padding-top: 8px">
+			<div style="display: flex; flex-direction: column; gap: 24px; padding-top: 8px">
+				{#if data.portfolio.fields.logo}
+					<div
+						style="background: var(--color-bg-sub); border: 1px solid var(--color-border); border-radius: var(--radius-card); padding: 40px; display: flex; align-items: center; justify-content: center; aspect-ratio: 16/9"
+					>
+						<img
+							src={data.portfolio.fields.logo.fields.file.url}
+							alt={data.portfolio.fields.logo.fields.description}
+							style="max-height: 64px; max-width: 220px; object-fit: contain"
+						/>
+					</div>
+				{/if}
 				<div>
 					<div
 						style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-fg-muted); font-weight: 700; margin-bottom: 10px"
@@ -92,7 +103,7 @@
 					target="_blank"
 					rel="nofollow"
 					class="btn btn-primary"
-					style="margin-top: 8px; align-self: flex-start"
+					style="align-self: flex-start"
 				>
 					Bekijk live website →
 				</a>
@@ -100,16 +111,6 @@
 		</div>
 	</div>
 </section>
-
-<!-- Featured image -->
-<div style="border-bottom: 1px solid var(--color-border)">
-	<img
-		src={data.portfolio.fields.featuredImagePortfolio.fields.file.url}
-		alt={data.portfolio.fields.featuredImagePortfolio.fields.description ||
-			data.portfolio.fields.featuredImagePortfolio.fields.title}
-		style="width: 100%; max-height: 520px; object-fit: cover; object-position: top"
-	/>
-</div>
 
 <!-- Projectomschrijving + Eigenschappen -->
 <section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
