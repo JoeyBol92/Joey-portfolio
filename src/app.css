@@ -196,14 +196,17 @@
 	}
 }
 
-@layer components {
-	/* Layout */
+@layer utilities {
 	.container {
 		width: 100%;
 		max-width: var(--spacing-max);
 		margin-inline: auto;
 		padding-inline: var(--spacing-section-x);
 	}
+}
+
+@layer components {
+	/* Layout */
 	.section {
 		padding-block: var(--spacing-section-y);
 	}
