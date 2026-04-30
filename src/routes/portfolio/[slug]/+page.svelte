@@ -81,6 +81,7 @@
 							src={data.portfolio.fields.logo.fields.file.url}
 							alt={data.portfolio.fields.logo.fields.description}
 							style="max-height: 64px; max-width: 220px; object-fit: contain"
+							fetchpriority="high"
 						/>
 					</div>
 				{/if}
@@ -112,7 +113,7 @@
 
 <!-- Projectomschrijving + Eigenschappen -->
 <section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
-	<div class="container g-editorial-wide">
+	<div class="g-editorial-wide container">
 		<div>
 			<div class="rule-header">
 				<span class="rule-header__label">Projectomschrijving</span>
@@ -177,10 +178,7 @@
 
 <!-- CTA -->
 <section class="contact-band">
-	<div
-		class="container g-cta"
-		style="padding-block: 68px"
-	>
+	<div class="g-cta container" style="padding-block: 68px">
 		<div>
 			<div
 				style="font-size: 10px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--color-accent); font-weight: 700; margin-bottom: 20px"
