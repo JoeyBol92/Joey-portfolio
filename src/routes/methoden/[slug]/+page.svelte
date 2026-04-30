@@ -40,7 +40,7 @@
 			<div class="eyebrow" style="margin-bottom: 0">{@html data.methoden.fields.titelMethode}</div>
 		</div>
 		<h1 style="max-width: 680px; margin-bottom: 28px">{@html data.methoden.fields.titelMethode}</h1>
-		<div style="max-width: 680px; line-height: 1.8; color: var(--color-fg-muted)">
+		<div class="rich-text" style="max-width: 680px">
 			{@html documentToHtmlString(data.methoden.fields.beschrijving)}
 		</div>
 	</div>

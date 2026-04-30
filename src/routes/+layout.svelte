@@ -4,6 +4,8 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import { onNavigate } from '$app/navigation';
 	import type { Snippet } from 'svelte';
+	import bricolageFont from '$lib/fonts/BricolageGrotesque-VariableFont.woff2?url';
+	import dmSansFont from '$lib/fonts/DMSans-VariableFont.woff2?url';
 
 	let { children }: { children?: Snippet } = $props();
 
@@ -27,6 +29,8 @@
 
 <svelte:head>
 	<title>JojoBee: websites op maat &copy; {new Date().getFullYear()}</title>
+	<link rel="preload" href={bricolageFont} as="font" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" href={dmSansFont} as="font" type="font/woff2" crossorigin="anonymous" />
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">

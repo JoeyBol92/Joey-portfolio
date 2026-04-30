@@ -64,6 +64,7 @@
 						<enhanced:img
 							src="/static/Joey-and-Emilio.jpg"
 							alt="Joey en Emilio"
+							fetchpriority="high"
 							style="width: 100%; height: 100%; object-fit: cover; object-position: center top"
 						/>
 					</div>
@@ -149,6 +150,7 @@
 					<enhanced:img
 						src="/static/img/portfolio/logo.png"
 						alt="DitjesenDatjes logo"
+						loading="lazy"
 						style="max-height: 50px; max-width: 180px; object-fit: contain"
 					/>
 					<div class="portfolio-card-overlay">
@@ -170,6 +172,7 @@
 					<enhanced:img
 						src="/static/img/portfolio/Bukett_Woordmerk_RGB_Zwart_144dpi.png"
 						alt="Bukett logo"
+						loading="lazy"
 						style="max-height: 50px; max-width: 180px; object-fit: contain"
 					/>
 					<div class="portfolio-card-overlay">
@@ -191,6 +194,7 @@
 					<enhanced:img
 						src="/static/img/portfolio/logo-ams-advocaten.png"
 						alt="AMS Advocaten logo"
+						loading="lazy"
 						style="max-height: 50px; max-width: 180px; object-fit: contain"
 					/>
 					<div class="portfolio-card-overlay">
@@ -240,6 +244,7 @@
 			<enhanced:img
 				src="/static/img/Joey-standing.jpg"
 				alt="Joey Bol"
+				loading="lazy"
 				style="width: 100%; height: 100%; object-fit: cover; object-position: center top"
 			/>
 		</div>

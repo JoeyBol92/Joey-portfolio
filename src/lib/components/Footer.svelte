@@ -30,6 +30,9 @@
 			<img
 				src="/Emilio-contact.jpg"
 				alt="Emilio"
+				width="56"
+				height="56"
+				loading="lazy"
 				style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; margin-top: 14px"
 			/>
 		</div>

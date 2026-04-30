@@ -119,7 +119,7 @@
 				<span class="rule-header__label">Projectomschrijving</span>
 				<div class="rule-header__line"></div>
 			</div>
-			<div style="line-height: 1.8; color: var(--color-fg-muted); font-size: 15px">
+			<div class="rich-text">
 				{@html documentToHtmlString(data.portfolio.fields.projectBeschrijving)}
 			</div>
 		</div>
@@ -168,6 +168,9 @@
 					<img
 						src={media.fields.file.url}
 						alt={media.fields.description || media.fields.title}
+						width={media.fields.file.details?.image?.width}
+						height={media.fields.file.details?.image?.height}
+						loading="lazy"
 						style="width: 100%; border-radius: var(--radius-card); aspect-ratio: 16/9; object-fit: cover; object-position: top"
 					/>
 				{/each}
