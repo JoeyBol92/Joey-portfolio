@@ -1,6 +1,30 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+@font-face {
+	font-family: 'Bricolage Grotesque';
+	src: url('$lib/fonts/BricolageGrotesque-VariableFont.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('$lib/fonts/DMSans-VariableFont.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url('$lib/fonts/DMSans-Italic-VariableFont.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+}
+
 @theme {
 	/* Sand / Editorial palette */
 	--color-sand-50: #f9f9f6;
