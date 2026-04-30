@@ -44,114 +44,102 @@
 			>← Terug naar portfolio</a
 		>
 		<div class="g-editorial" style="align-items: start; margin-top: 32px">
-			<div>
-				<div class="eyebrow">{@html data.portfolio.fields.categorie}</div>
-				<h1 style="margin-bottom: 24px">{@html data.portfolio.fields.title_portfolio}</h1>
-				<div
-					style="display: flex; gap: 36px; padding-top: 24px; border-top: 1px solid var(--color-border)"
-				>
-					<div>
-						<div
-							style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-fg-muted); font-weight: 700; margin-bottom: 6px"
-						>
-							Klant
-						</div>
-						<div style="font-size: 15px; color: var(--color-fg); font-weight: 600">
-							{@html data.portfolio.fields.client}
-						</div>
+			<!-- Left: category badge + title + description + eigenschappen -->
+			<div style="display: flex; flex-direction: column; gap: 32px">
+				<div>
+					<span class="badge" style="margin-bottom: 20px">{@html data.portfolio.fields.categorie}</span>
+					<h1>{@html data.portfolio.fields.title_portfolio}</h1>
+				</div>
+				<div>
+					<div class="rule-header">
+						<span class="rule-header__label">Projectomschrijving</span>
+						<div class="rule-header__line"></div>
 					</div>
-					<div>
-						<div
-							style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-fg-muted); font-weight: 700; margin-bottom: 6px"
-						>
-							Datum
-						</div>
-						<div style="font-size: 15px; color: var(--color-fg); font-weight: 600">
-							{@html data.portfolio.fields.date}
-						</div>
+					<div class="rich-text">
+						{@html documentToHtmlString(data.portfolio.fields.projectBeschrijving)}
+					</div>
+				</div>
+				<div>
+					<div class="rule-header">
+						<span class="rule-header__label">Eigenschappen</span>
+						<div class="rule-header__line"></div>
+					</div>
+					<div style="display: flex; flex-direction: column; gap: 12px">
+						{#each data.portfolio.fields.projectOverview as eigenschap}
+							<div class="check-item">
+								<div class="check-item__dot">
+									<svg
+										width="12"
+										height="12"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="white"
+										stroke-width="3"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path d="M20 6 9 17l-5-5" />
+									</svg>
+								</div>
+								<span>{@html eigenschap}</span>
+							</div>
+						{/each}
 					</div>
 				</div>
 			</div>
-			<div style="display: flex; flex-direction: column; gap: 24px; padding-top: 8px">
-				{#if data.portfolio.fields.logo}
-					<div
-						style="background: var(--color-bg-sub); border: 1px solid var(--color-border); border-radius: var(--radius-card); padding: 40px; display: flex; align-items: center; justify-content: center; aspect-ratio: 16/9"
-					>
-						<img
-							src={data.portfolio.fields.logo.fields.file.url}
-							alt={data.portfolio.fields.logo.fields.description}
-							style="max-height: 64px; max-width: 220px; object-fit: contain"
-							fetchpriority="high"
-						/>
+
+			<!-- Right: info card -->
+			<div class="info-card" style="display: flex; flex-direction: column; gap: 12px">
+				<div style="background: var(--color-bg-sub); border: 1px solid var(--color-border); border-radius: var(--radius-card); padding: 28px">
+					{#if data.portfolio.fields.logo}
+						<div style="background: var(--color-bg); border-radius: 10px; padding: 28px; display: flex; align-items: center; justify-content: center; margin-bottom: 4px; min-height: 120px">
+							<img
+								src={data.portfolio.fields.logo.fields.file.url}
+								alt={data.portfolio.fields.logo.fields.description}
+								style="max-height: 52px; max-width: 200px; object-fit: contain"
+								fetchpriority="high"
+							/>
+						</div>
+					{/if}
+					<div class="info-row">
+						<span class="info-row__label">Klant</span>
+						<span class="info-row__value">{@html data.portfolio.fields.client}</span>
 					</div>
-				{/if}
-				<div>
-					<div
-						style="font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-fg-muted); font-weight: 700; margin-bottom: 10px"
-					>
-						Technieken
+					<div class="info-row">
+						<span class="info-row__label">Datum</span>
+						<span class="info-row__value">{@html data.portfolio.fields.date}</span>
 					</div>
-					<div style="display: flex; flex-wrap: wrap; gap: 8px">
-						{#each data.portfolio.fields.technieken as techniek}
-							<span class="tag">{@html techniek}</span>
-						{/each}
+					<div class="info-row">
+						<span class="info-row__label">Type</span>
+						<span class="info-row__value">{@html data.portfolio.fields.categorie}</span>
 					</div>
+					{#if data.portfolio.fields.technieken?.length}
+						<div class="info-row" style="align-items: flex-start">
+							<span class="info-row__label" style="padding-top: 3px">Stack</span>
+							<div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; max-width: 200px">
+								{#each data.portfolio.fields.technieken as techniek}
+									<span class="tag">{@html techniek}</span>
+								{/each}
+							</div>
+						</div>
+					{/if}
 				</div>
 				<a
 					href={data.portfolio.fields.websiteKlant}
 					target="_blank"
 					rel="nofollow"
 					class="btn btn-primary"
-					style="align-self: flex-start"
 				>
 					Bekijk live website →
+				</a>
+				<a href="/contact/" class="btn btn-secondary">
+					Vergelijkbaar project? →
 				</a>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Projectomschrijving + Eigenschappen -->
-<section style="padding: 60px 0; border-bottom: 1px solid var(--color-border)">
-	<div class="g-editorial-wide container">
-		<div>
-			<div class="rule-header">
-				<span class="rule-header__label">Projectomschrijving</span>
-				<div class="rule-header__line"></div>
-			</div>
-			<div class="rich-text">
-				{@html documentToHtmlString(data.portfolio.fields.projectBeschrijving)}
-			</div>
-		</div>
-		<div>
-			<div class="rule-header">
-				<span class="rule-header__label">Eigenschappen</span>
-				<div class="rule-header__line"></div>
-			</div>
-			<div style="display: flex; flex-direction: column; gap: 12px">
-				{#each data.portfolio.fields.projectOverview as eigenschap}
-					<div class="check-item">
-						<div class="check-item__dot">
-							<svg
-								width="12"
-								height="12"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="white"
-								stroke-width="3"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path d="M20 6 9 17l-5-5" />
-							</svg>
-						</div>
-						<span>{@html eigenschap}</span>
-					</div>
-				{/each}
-			</div>
-		</div>
-	</div>
-</section>
 
 <!-- Media gallery -->
 {#if data.portfolio.fields.media}
